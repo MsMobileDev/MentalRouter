@@ -8,16 +8,27 @@
 import SwiftUI
 
 struct DetailView: View {
-    var color: UIColor
+    var viewModel: DetailViewModel
     
     var body: some View {
-        Rectangle()
-            .foregroundColor(Color(color))
+        ZStack {
+            Color(viewModel.color)
+            
+            Button(action: {
+                viewModel.state = .rollBack
+            }, label: {
+                Text("Go back")
+                    .font(.largeTitle)
+                    .padding()
+                    .background(Color.white)
+                    .cornerRadius(15.0)
+            })
+        }
     }
 }
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(color: .blue)
+        DetailView(viewModel: DetailViewModel(color: .blue))
     }
 }

@@ -7,14 +7,22 @@
 
 import Foundation
 
-final class DetailRouter: RouterProtocol {
-    typealias RoutingDestination = RoutingDestinationProtocol & RoutingViewProviderProtocol
+final class DetailRouter {
+    private let router: Router
     
-    private let router: Router = Application.shared.router
+    init(router: Router) {
+        self.router = router
+    }
+}
+
+// MARK: RouterProtocol
+extension DetailRouter: RouterProtocol {
+    typealias RoutingDestination = RoutingDestinationProtocol & RoutingViewProviderProtocol
     
     func route(destination: RoutingDestination) {
         let view = destination.destinationView
         
-        router.navigate(view: .viewController(view), presentationStyle: .replaceRoot)
+        router.navigate(view: .viewController(view),
+                        presentationStyle: .present(presentationStyle: .overFullScreen, transitionStyle: .coverVertical))
     }
 }

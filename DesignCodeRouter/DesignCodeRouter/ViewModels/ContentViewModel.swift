@@ -38,7 +38,7 @@ private extension ContentViewModel {
             
         case let .navigate(destination):
             if let destination = destination as? DetailDestination {
-                DetailRouter().route(destination: destination)
+                Router.shared.detailRouter.route(destination: destination)
             }
         }
     }

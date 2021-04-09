@@ -11,4 +11,11 @@ protocol RouterProtocol {
     associatedtype RoutingDestination
     
     func route(destination: RoutingDestination)
+    func rollBack()
+}
+
+extension RouterProtocol {
+    func rollBack() {
+        Router.shared.rollBack()
+    }
 }

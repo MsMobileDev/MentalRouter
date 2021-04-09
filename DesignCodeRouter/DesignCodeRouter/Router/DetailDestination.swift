@@ -16,7 +16,8 @@ extension DetailDestination: RoutingViewProviderProtocol {
     var destinationView: AnyView {
         switch self {
         case let .detailView(color):
-            return DetailView(color: color).castToAnyView()
+            let viewModel = DetailViewModel(color: color)
+            return DetailView(viewModel: viewModel).castToAnyView()
         }
     }
 }

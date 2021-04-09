@@ -10,7 +10,7 @@ import SwiftUI
 
 enum PresentationStyle {
     case push
-    case present
+    case present(presentationStyle: UIModalPresentationStyle, transitionStyle: UIModalTransitionStyle)
     case replaceRoot
 }
 
@@ -20,28 +20,26 @@ enum PresentingView {
 }
 
 final class Router {
-    private var window: UIWindow
+    static let shared: Router = Router()
     
-    private var topViewController: UIViewController? {
-        guard let rootViewController = window.rootViewController else {
-            return nil
-        }
-        
-        guard let navigationViewController = rootViewController as? UINavigationController else {
-            return rootViewController
-        }
-        
-        return navigationViewController.topViewController
+    lazy var detailRouter: DetailRouter = {
+        return DetailRouter(router: self)
+    }()
+    
+    private var window: UIWindow!
+    
+    private var navigationController: UINavigationController? {
+        return window.rootViewController as? UINavigationController
     }
     
-    init(window: UIWindow) {
-        self.window = window
-    }
+    private init() {}
 }
 
 // MARK: Public methods
 extension Router {
-    func initialSetup() {
+    func initialSetup(window: UIWindow) {
+        self.window = window
+        
         let contentView = ContentView(viewModel: ContentViewModel()).castToAnyView()
         let presentingView: PresentingView = .navigationController(.viewController(contentView))
         
@@ -52,15 +50,47 @@ extension Router {
         let viewController = buildViewController(presentingView: view)
         
         switch presentationStyle {
-        case .present:
-            topViewController?.navigationController?.present(viewController, animated: true, completion: nil)
+        case let .present(modalPresentationStyle, modalTransitionStyle):
+            DispatchQueue.main.async {
+                viewController.modalPresentationStyle = modalPresentationStyle
+                viewController.modalTransitionStyle = modalTransitionStyle
+                
+                self.navigationController?.present(viewController, animated: true, completion: nil)
+            }
             
         case .push:
-            topViewController?.navigationController?.pushViewController(viewController, animated: true)
+            DispatchQueue.main.async {
+                self.navigationController?.pushViewController(viewController, animated: true)
+            }
             
         case .replaceRoot:
-            window.rootViewController = viewController
+            DispatchQueue.main.async {
+                self.window.rootViewController = viewController
+            }
         }
+    }
+    
+    func rollBack() {
+        DispatchQueue.main.async {
+            guard let visibleController = self.navigationController?.visibleViewController,
+                  visibleController.canPerformRollBackAction() else { return }
+            
+            if visibleController.isPresented {
+                visibleController.dismiss(animated: true, completion: nil)
+            } else {
+                self.navigationController?.popViewController(animated: true)
+            }
+        }
+    }
+}
+
+extension UIViewController {
+    var isPresented: Bool {
+        return self.presentingViewController != nil
+    }
+    
+    func canPerformRollBackAction() -> Bool {
+        return self.navigationController?.viewControllers.first != self
     }
 }
 
