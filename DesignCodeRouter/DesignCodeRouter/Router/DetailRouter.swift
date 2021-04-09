@@ -14,6 +14,7 @@ final class DetailRouter: RouterProtocol {
     
     func route(destination: RoutingDestination) {
         let view = destination.destinationView
-        router.navigate(view: view)
+        
+        router.navigate(view: .viewController(view), presentationStyle: .replaceRoot)
     }
 }
