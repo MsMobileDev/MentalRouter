@@ -20,11 +20,7 @@ enum PresentingView {
 }
 
 final class Router {
-    static let shared: Router = Router()
-    
-    lazy var detailRouter: DetailRouter = {
-        return DetailRouter(router: self)
-    }()
+    static let `default`: Router = Router()
     
     private var window: UIWindow!
     
@@ -81,16 +77,6 @@ extension Router {
                 self.navigationController?.popViewController(animated: true)
             }
         }
-    }
-}
-
-extension UIViewController {
-    var isPresented: Bool {
-        return self.presentingViewController != nil
-    }
-    
-    func canPerformRollBackAction() -> Bool {
-        return self.navigationController?.viewControllers.first != self
     }
 }
 

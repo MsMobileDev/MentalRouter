@@ -16,6 +16,6 @@ protocol RouterProtocol {
 
 extension RouterProtocol {
     func rollBack() {
-        Router.shared.rollBack()
+        Router.default.rollBack()
     }
 }

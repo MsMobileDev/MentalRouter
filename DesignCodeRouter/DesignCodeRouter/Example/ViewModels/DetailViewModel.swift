@@ -37,7 +37,7 @@ private extension DetailViewModel {
             break
             
         case .rollBack:
-            Router.shared.detailRouter.rollBack()
+            Router.detailRouter.rollBack()
         }
     }
 }

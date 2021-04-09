@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             
-            Router.shared.initialSetup(window: window)
+            Router.default.initialSetup(window: window)
             
             self.window = window
             window.makeKeyAndVisible()
