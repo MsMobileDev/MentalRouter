@@ -8,19 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     @State var viewModel: ContentViewModel
     
     var body: some View {
         VStack {
+            SettingsView(viewModel: $viewModel.settingsViewModel)
+            
             Text("Choose the color")
-                .font(.title)
-
+                .font(.system(size: 16.0))
+            
             HStack {
                 ForEach(0..<viewModel.colors.count) { colorIndex in
                     Button(action: {
                         let color = viewModel.colors[colorIndex]
                         let destination = DetailDestination.detailView(color: color)
-
+                        
                         viewModel.state = .navigate(destination: destination)
                     }, label: {
                         Rectangle()
@@ -30,6 +33,7 @@ struct ContentView: View {
                 }
             }
         }
+        .padding()
     }
 }
 
@@ -37,6 +41,8 @@ struct ContentView_Previews: PreviewProvider {
     static var viewModel = ContentViewModel()
     
     static var previews: some View {
-        ContentView(viewModel: viewModel)
+        Group {
+            ContentView(viewModel: viewModel)
+        }
     }
 }

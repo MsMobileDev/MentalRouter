@@ -10,7 +10,7 @@ import Foundation
 protocol RouterProtocol {
     associatedtype RoutingDestination
     
-    func route(destination: RoutingDestination)
+    func route(destination: RoutingDestination, presentationStyle: PresentationStyle)
     func rollBack()
 }
 

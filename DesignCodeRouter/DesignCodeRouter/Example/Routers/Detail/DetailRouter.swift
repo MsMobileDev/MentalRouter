@@ -19,10 +19,9 @@ final class DetailRouter {
 extension DetailRouter: RouterProtocol {
     typealias RoutingDestination = RoutingDestinationProtocol & RoutingViewProviderProtocol
     
-    func route(destination: RoutingDestination) {
+    func route(destination: RoutingDestination, presentationStyle: PresentationStyle) {
         let view = destination.destinationView
         
-        router.navigate(view: .viewController(view),
-                        presentationStyle: .present(presentationStyle: .overFullScreen, transitionStyle: .coverVertical))
+        router.navigate(view: .viewController(view), presentationStyle: presentationStyle)
     }
 }

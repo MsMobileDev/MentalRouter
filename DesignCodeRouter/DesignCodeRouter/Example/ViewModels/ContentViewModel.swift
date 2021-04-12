@@ -8,13 +8,15 @@
 import Foundation
 import SwiftUI
 
-final class ContentViewModel {
+final class ContentViewModel: ObservableObject {
     enum State {
         case initial
         case navigate(destination: RoutingDestinationProtocol)
     }
     
     var colors: [UIColor]
+    
+    var settingsViewModel: SettingsViewModel
     
     var state: State! {
         didSet {
@@ -24,6 +26,7 @@ final class ContentViewModel {
     
     init() {
         self.colors = [.blue, .red, .yellow]
+        self.settingsViewModel = SettingsViewModel()
         self.state = .initial
         
         self.setup(state: state)
@@ -38,7 +41,8 @@ private extension ContentViewModel {
             
         case let .navigate(destination):
             if let destination = destination as? DetailDestination {
-                Router.detailRouter.route(destination: destination)
+                Router.detailRouter.route(destination: destination,
+                                          presentationStyle: settingsViewModel.presentationStyle)
             }
         }
     }

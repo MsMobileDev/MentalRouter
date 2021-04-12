@@ -12,13 +12,20 @@ struct DetailView: View {
     
     var body: some View {
         ZStack {
-            Color(viewModel.color)
+            
+            if #available(iOS 14.0, *) {
+                Color(viewModel.color)
+                    .ignoresSafeArea()
+            } else {
+                Color(viewModel.color)
+            }
             
             Button(action: {
                 viewModel.state = .rollBack
             }, label: {
                 Text("Go back")
                     .font(.largeTitle)
+                    .foregroundColor(Color(viewModel.color))
                     .padding()
                     .background(Color.white)
                     .cornerRadius(15.0)
