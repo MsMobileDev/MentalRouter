@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-final class SettingsViewModel: ObservableObject {
+struct SettingsViewModel {
     var presentationMode: PresentationMode = .push
     var modalPresentationStyle: ModalPresentationStyle = .pageSheet
     var modalTransitionStyle: ModalTransitionStyle = .coverVertical
@@ -79,19 +79,19 @@ extension UIModalTransitionStyle: CaseIterable, Identifiable {
     public typealias AllCases = [UIModalTransitionStyle]
     
     public static var allCases: [UIModalTransitionStyle] {
-        return [.coverVertical, .crossDissolve, .flipHorizontal, .partialCurl]
+        return [.coverVertical, .crossDissolve, .flipHorizontal]
     }
     
     var description: String {
         switch self {
         case .coverVertical:
-            return "vertical"
+            return "cover"
             
         case .crossDissolve:
             return "cross"
             
         case .flipHorizontal:
-            return "horizontal"
+            return "flip"
             
         case .partialCurl:
             return "curl"

@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-final class ContentViewModel: ObservableObject {
+struct ContentViewModel {
     enum State {
         case initial
         case navigate(destination: RoutingDestinationProtocol)
