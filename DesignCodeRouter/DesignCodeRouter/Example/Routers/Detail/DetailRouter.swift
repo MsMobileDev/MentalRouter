@@ -21,7 +21,10 @@ extension DetailRouter: RouterProtocol {
     
     func route(destination: RoutingDestination, presentationStyle: PresentationStyle) {
         let view = destination.destinationView
+        let viewController = router.buildViewController(presentingView: .viewController(view))
         
-        router.navigate(view: .viewController(view), presentationStyle: presentationStyle)
+        // Configure navigationItem here if it needed
+        
+        router.navigate(viewController: viewController, presentationStyle: presentationStyle)
     }
 }

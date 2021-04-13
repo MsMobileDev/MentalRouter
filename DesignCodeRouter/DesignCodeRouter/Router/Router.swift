@@ -38,13 +38,23 @@ extension Router {
         
         let contentView = ContentView(viewModel: ContentViewModel()).castToAnyView()
         let presentingView: PresentingView = .navigationController(.viewController(contentView))
+        let viewController = buildViewController(presentingView: presentingView)
         
-        navigate(view: presentingView, presentationStyle: .replaceRoot)
+        navigate(viewController: viewController, presentationStyle: .replaceRoot)
     }
     
-    func navigate(view: PresentingView, presentationStyle: PresentationStyle) {
-        let viewController = buildViewController(presentingView: view)
-        
+    func buildViewController(presentingView: PresentingView) -> UIViewController {
+        switch presentingView {
+        case let .viewController(rootView):
+            return UIHostingController(rootView: rootView)
+            
+        case let .navigationController(presentingView):
+            let viewController = buildViewController(presentingView: presentingView)
+            return UINavigationController(rootViewController: viewController)
+        }
+    }
+    
+    func navigate(viewController: UIViewController, presentationStyle: PresentationStyle) {
         switch presentationStyle {
         case let .present(modalPresentationStyle, modalTransitionStyle):
             DispatchQueue.main.async {
@@ -76,21 +86,6 @@ extension Router {
             } else {
                 self.navigationController?.popViewController(animated: true)
             }
-        }
-    }
-}
-
-// MARK: Private methods
-private extension Router {
-    func buildViewController(presentingView: PresentingView) -> UIViewController {
-        switch presentingView {
-        case let .viewController(rootView):
-            return UIHostingController(rootView: rootView)
-            
-        case let .navigationController(presentingView):
-            let viewController = buildViewController(presentingView: presentingView)
-            
-            return UINavigationController(rootViewController: viewController)
         }
     }
 }
