@@ -12,6 +12,7 @@ enum PresentationStyle {
     case push
     case present(presentationStyle: UIModalPresentationStyle, transitionStyle: UIModalTransitionStyle)
     case replaceRoot
+    case custom(transition: NavigationTransition)
 }
 
 enum PresentingView {
@@ -23,6 +24,8 @@ final class Router {
     static let `default`: Router = Router()
     
     private var window: UIWindow!
+    
+    private var transitionHandler: TransitionHandler?
     
     private var navigationController: UINavigationController? {
         return window.rootViewController as? UINavigationController
@@ -72,6 +75,16 @@ extension Router {
         case .replaceRoot:
             DispatchQueue.main.async {
                 self.window.rootViewController = viewController
+            }
+            
+        case let .custom(transition):
+            DispatchQueue.main.async {
+                self.transitionHandler = TransitionHandler(navigationTransition: transition)
+                
+                viewController.transitioningDelegate = self.transitionHandler
+                viewController.modalPresentationStyle = .custom
+                
+                self.navigationController?.present(viewController, animated: true, completion: nil)
             }
         }
     }

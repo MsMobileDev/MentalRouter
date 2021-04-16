@@ -15,6 +15,7 @@
 		5326F88E261CC9CC006FBB8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5326F88D261CC9CC006FBB8A /* Assets.xcassets */; };
 		5326F891261CC9CC006FBB8A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5326F890261CC9CC006FBB8A /* Preview Assets.xcassets */; };
 		5326F89E261DB926006FBB8A /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326F89D261DB926006FBB8A /* Router.swift */; };
+		5353A9AF2629E268002F58AE /* TransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5353A9AE2629E268002F58AE /* TransitionHandler.swift */; };
 		53545AE82620A5AD00C81C21 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53545AE72620A5AD00C81C21 /* DetailViewModel.swift */; };
 		53545AEF2620BAE900C81C21 /* UIViewController+Presented.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53545AEE2620BAE900C81C21 /* UIViewController+Presented.swift */; };
 		53545AF72620BCB200C81C21 /* Router+DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53545AF62620BCB200C81C21 /* Router+DetailRouter.swift */; };
@@ -40,6 +41,7 @@
 		5326F890261CC9CC006FBB8A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5326F895261CC9CC006FBB8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5326F89D261DB926006FBB8A /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		5353A9AE2629E268002F58AE /* TransitionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionHandler.swift; sourceTree = "<group>"; };
 		53545AE72620A5AD00C81C21 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		53545AEE2620BAE900C81C21 /* UIViewController+Presented.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Presented.swift"; sourceTree = "<group>"; };
 		53545AF62620BCB200C81C21 /* Router+DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Router+DetailRouter.swift"; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				5361AF31261F731500A31E0C /* RoutingViewProviderProtocol.swift */,
 				53545AEE2620BAE900C81C21 /* UIViewController+Presented.swift */,
 				5379F60426258EE700414C15 /* NavigationViewProtocol.swift */,
+				5353A9AE2629E268002F58AE /* TransitionHandler.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				5361AF39261F73DA00A31E0C /* View+AnyView.swift in Sources */,
 				531FA744261F377500739BEE /* DetailView.swift in Sources */,
 				5361AF2F261F72ED00A31E0C /* RoutingDestinationProtocol.swift in Sources */,
+				5353A9AF2629E268002F58AE /* TransitionHandler.swift in Sources */,
 				53545AEF2620BAE900C81C21 /* UIViewController+Presented.swift in Sources */,
 				5361AF32261F731500A31E0C /* RoutingViewProviderProtocol.swift in Sources */,
 				53817F7A262451CE0088A560 /* SettingsViewModel.swift in Sources */,
