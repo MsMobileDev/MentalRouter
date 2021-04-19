@@ -19,18 +19,27 @@ struct ContentView: View {
             
             HStack {
                 ForEach(0..<viewModel.colors.count) { colorIndex in
-                    Button(action: {
-                        let color = viewModel.colors[colorIndex]
-                        let destination = DetailDestination.detailView(color: color)
-                        
-                        viewModel.state = .navigate(destination: destination)
-                    }, label: {
-                        Rectangle()
-                            .fill(Color(viewModel.colors[colorIndex]))
-                            .frame(width: 50, height: 50)
-                    })
+                    GeometryReader { geometry in
+                        Button(action: {
+                            let color = viewModel.colors[colorIndex]
+                            let destination = DetailDestination.detailView(color: color)
+                            let viewFrame = geometry.frame(in: .global)
+                            let viewCenter = CGPoint(x: viewFrame.midX, y: viewFrame.midY)
+                            let transition = NavigationTransition(
+                                presented: ScaleTransition(duration: 0.6, scale: 1.0, center: viewCenter),
+                                dismissed: ScaleTransition(duration: 0.6, scale: 0.0, center: viewCenter)
+                            )
+                            
+                            viewModel.state = .navigate(destination: destination, transition: transition)
+                        }, label: {
+                            Rectangle()
+                                .fill(Color(viewModel.colors[colorIndex]))
+                        })
+                    }
+                    .frame(width: 50, height: 50)
                 }
             }
+            
         }
         .padding()
     }

@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentViewModel {
     enum State {
         case initial
-        case navigate(destination: RoutingDestinationProtocol)
+        case navigate(destination: RoutingDestinationProtocol, transition: NavigationTransition?)
     }
     
     var colors: [UIColor]
@@ -39,10 +39,14 @@ private extension ContentViewModel {
         case .initial:
             break
             
-        case let .navigate(destination):
+        case let .navigate(destination, transition):
             if let destination = destination as? DetailDestination {
-                Router.detailRouter.route(destination: destination,
-                                          presentationStyle: settingsViewModel.presentationStyle)
+                if let navigationTransition = transition {
+                    Router.detailRouter.route(destination: destination,
+                                              presentationStyle: .custom(transition: navigationTransition))
+                } else {
+                    Router.detailRouter.route(destination: destination, presentationStyle: settingsViewModel.presentationStyle)
+                }
             }
         }
     }
