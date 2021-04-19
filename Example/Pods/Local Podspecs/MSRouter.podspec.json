@@ -1,0 +1,19 @@
+{
+  "name": "MSRouter",
+  "version": "0.1",
+  "summary": "A short description of MSRouter.",
+  "description": "A description of MSRouter",
+  "homepage": "https://gitlab.mentalstack.com/oshilenko/design-code-router-ios.git",
+  "license": "MIT",
+  "authors": {
+    "Olga Shilenko": "oshilenko@mentalstack.com"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source": {
+    "git": "https://gitlab.mentalstack.com/oshilenko/design-code-router-ios.git",
+    "tag": "0.1"
+  },
+  "source_files": "MSRouter/**/**/*.swift"
+}
