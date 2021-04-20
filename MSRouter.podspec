@@ -10,16 +10,24 @@ Pod::Spec.new do |spec|
 
   spec.name         = "MSRouter"
   spec.version      = "0.1"
-  spec.summary      = "A short description of MSRouter."
+  spec.summary      = "Simple router for UIKit and SwiftUI iOS applications."
+  
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "A description of MSRouter"
-  spec.homepage     = "https://gitlab.mentalstack.com/oshilenko/design-code-router-ios.git"
-
+  
+  spec.description  = <<-DESC
+                      This framework provides router for UIKit, SwiftUI and UIKit+SwiftUI iOS applications.
+                      All transitions in application are implemented via standard UIKit navigation stack.
+                      
+                      Features:
+                      - Push, present and replace SwiftUI views
+                      - Present SwiftUI view with a custom transition
+                      DESC
+  spec.homepage     = "https://github.com/MsMobileDev/MSRouter.git"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -29,8 +37,7 @@ Pod::Spec.new do |spec|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  spec.license      = "MIT"
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  spec.license      = { :type => "MIT", :file => "MIT_LICENSE.txt" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -44,24 +51,16 @@ Pod::Spec.new do |spec|
   #
 
   spec.author             = { "Olga Shilenko" => "oshilenko@mentalstack.com" }
-  # Or just: spec.author    = "Olga Shilenko"
-  # spec.authors            = { "Olga Shilenko" => "oshilenko@mentalstack.com" }
   # spec.social_media_url   = "https://twitter.com/Olga Shilenko"
 
+  
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  If this Pod runs only on iOS or OS X, then specify the platform and
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  # spec.platform     = :ios
    spec.platform     = :ios, "13.0"
-
-  #  When using multiple platforms
-   spec.ios.deployment_target = "13.0"
-  # spec.osx.deployment_target = "10.7"
-  # spec.watchos.deployment_target = "2.0"
-  # spec.tvos.deployment_target = "9.0"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -70,7 +69,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://gitlab.mentalstack.com/oshilenko/design-code-router-ios.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/MsMobileDev/MSRouter.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -82,8 +81,6 @@ Pod::Spec.new do |spec|
   #
 
   spec.source_files  = "MSRouter/**/**/*.swift"
-  # spec.exclude_files = "Classes/Exclude"
-  # spec.public_header_files = "Classes/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
