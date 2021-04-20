@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MSRouter
 
 struct ContentView: View {
     @State var viewModel: ContentViewModel
@@ -25,7 +26,7 @@ struct ContentView: View {
                             let destination = DetailDestination.detailView(color: color)
                             let viewFrame = geometry.frame(in: .global)
                             let viewCenter = CGPoint(x: viewFrame.midX, y: viewFrame.midY)
-                            let transition = NavigationTransition(
+                            let transition = MSNavigationTransition(
                                 presented: ScaleTransition(duration: 0.6, scale: 1.0, center: viewCenter),
                                 dismissed: ScaleTransition(duration: 0.6, scale: 0.0, center: viewCenter)
                             )
@@ -39,7 +40,24 @@ struct ContentView: View {
                     .frame(width: 50, height: 50)
                 }
             }
+            .padding(.vertical, 15)
             
+            Text("or")
+            
+            Button(action: {
+                let destination = ControllerDestination.simpleText
+
+                viewModel.state = .navigate(destination: destination, transition: nil)
+            }, label: {
+                Text("Go to simple controller")
+                    .padding()
+                    
+                    .background(Color.init(UIColor.lightGray.withAlphaComponent(0.2)))
+                    .cornerRadius(20.0)
+                    .clipped()
+                    .padding()
+            
+            })
         }
         .padding()
     }

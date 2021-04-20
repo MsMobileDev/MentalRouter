@@ -17,6 +17,8 @@
 		537F28C3262DD02100BFE581 /* UIViewController+Presented.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537F28BC262DD02100BFE581 /* UIViewController+Presented.swift */; };
 		53F4E1C0262DE104003CD2DD /* MSPresentationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F4E1BF262DE104003CD2DD /* MSPresentationStyle.swift */; };
 		53F4E1C3262DE11A003CD2DD /* MSPresentingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F4E1C2262DE11A003CD2DD /* MSPresentingView.swift */; };
+		53F4E201262F05F0003CD2DD /* MSRoutingControllerProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F4E200262F05F0003CD2DD /* MSRoutingControllerProviderProtocol.swift */; };
+		53F4E205262F09E6003CD2DD /* MSPresentingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F4E204262F09E6003CD2DD /* MSPresentingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		537F28BC262DD02100BFE581 /* UIViewController+Presented.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Presented.swift"; sourceTree = "<group>"; };
 		53F4E1BF262DE104003CD2DD /* MSPresentationStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSPresentationStyle.swift; sourceTree = "<group>"; };
 		53F4E1C2262DE11A003CD2DD /* MSPresentingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSPresentingView.swift; sourceTree = "<group>"; };
+		53F4E200262F05F0003CD2DD /* MSRoutingControllerProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSRoutingControllerProviderProtocol.swift; sourceTree = "<group>"; };
+		53F4E204262F09E6003CD2DD /* MSPresentingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSPresentingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +82,13 @@
 				537F28BA262DD02100BFE581 /* MSRouter.swift */,
 				537F28BB262DD02100BFE581 /* MSRouterProtocol.swift */,
 				537F28B6262DD02100BFE581 /* MSRoutingViewProviderProtocol.swift */,
+				53F4E200262F05F0003CD2DD /* MSRoutingControllerProviderProtocol.swift */,
 				537F28B7262DD02100BFE581 /* MSRoutingDestinationProtocol.swift */,
 				537F28B8262DD02100BFE581 /* MSNavigationTransition.swift */,
 				537F28B9262DD02100BFE581 /* MSTransitionHandler.swift */,
 				53F4E1BF262DE104003CD2DD /* MSPresentationStyle.swift */,
 				53F4E1C2262DE11A003CD2DD /* MSPresentingView.swift */,
+				53F4E204262F09E6003CD2DD /* MSPresentingViewController.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -174,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				537F28C2262DD02100BFE581 /* MSRouterProtocol.swift in Sources */,
+				53F4E205262F09E6003CD2DD /* MSPresentingViewController.swift in Sources */,
 				53F4E1C0262DE104003CD2DD /* MSPresentationStyle.swift in Sources */,
 				537F28BE262DD02100BFE581 /* MSRoutingDestinationProtocol.swift in Sources */,
 				537F28C3262DD02100BFE581 /* UIViewController+Presented.swift in Sources */,
@@ -181,6 +188,7 @@
 				537F28C1262DD02100BFE581 /* MSRouter.swift in Sources */,
 				537F28BF262DD02100BFE581 /* MSNavigationTransition.swift in Sources */,
 				537F28C0262DD02100BFE581 /* MSTransitionHandler.swift in Sources */,
+				53F4E201262F05F0003CD2DD /* MSRoutingControllerProviderProtocol.swift in Sources */,
 				53F4E1C3262DE11A003CD2DD /* MSPresentingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

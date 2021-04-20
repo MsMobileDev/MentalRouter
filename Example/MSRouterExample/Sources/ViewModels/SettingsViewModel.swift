@@ -5,15 +5,15 @@
 //  Created by Olga Shilenko on 12.04.2021.
 //
 
-import Foundation
 import SwiftUI
+import MSRouter
 
 struct SettingsViewModel {
     var presentationMode: PresentationMode = .push
     var modalPresentationStyle: ModalPresentationStyle = .pageSheet
     var modalTransitionStyle: ModalTransitionStyle = .coverVertical
     
-    var presentationStyle: PresentationStyle {
+    var presentationStyle: MSPresentationStyle {
         switch presentationMode {
         case .push:
             return .push

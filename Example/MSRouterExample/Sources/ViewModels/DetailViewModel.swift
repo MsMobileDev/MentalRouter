@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import MSRouter
 
 final class DetailViewModel {
     enum State {
@@ -37,7 +38,7 @@ private extension DetailViewModel {
             break
             
         case .rollBack:
-            Router.detailRouter.rollBack()
+            MSRouter.detailRouter.rollBack()
         }
     }
 }

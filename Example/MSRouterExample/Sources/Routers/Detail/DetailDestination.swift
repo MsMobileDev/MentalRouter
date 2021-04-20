@@ -6,13 +6,14 @@
 //
 
 import SwiftUI
+import MSRouter
 
-enum DetailDestination: RoutingDestinationProtocol {
+enum DetailDestination: MSRoutingDestinationProtocol {
     case detailView(color: UIColor)
 }
 
 // MARK: RoutingViewProviderProtocol
-extension DetailDestination: RoutingViewProviderProtocol {
+extension DetailDestination: MSRoutingViewProviderProtocol {
     var destinationView: AnyView {
         switch self {
         case let .detailView(color):

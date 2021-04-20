@@ -39,6 +39,17 @@ public extension MSRouter {
         }
     }
     
+    func buildViewController(presentingViewController: MSPresentingViewController) -> UIViewController {
+        switch presentingViewController {
+        case let .viewController(controller):
+            return controller
+            
+        case let .navigationController(controller):
+            let viewController = buildViewController(presentingViewController: controller)
+            return UINavigationController(rootViewController: viewController)
+        }
+    }
+    
     func navigate(viewController: UIViewController, presentationStyle: MSPresentationStyle) {
         switch presentationStyle {
         case let .present(modalPresentationStyle, modalTransitionStyle):

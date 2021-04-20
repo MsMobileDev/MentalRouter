@@ -6,20 +6,21 @@
 //
 
 import Foundation
+import MSRouter
 
 final class DetailRouter {
-    private let router: Router
+    private let router: MSRouter
     
-    init(router: Router) {
+    init(router: MSRouter) {
         self.router = router
     }
 }
 
 // MARK: RouterProtocol
-extension DetailRouter: RouterProtocol {
-    typealias RoutingDestination = RoutingDestinationProtocol & RoutingViewProviderProtocol
+extension DetailRouter: MSRouterProtocol {
+    typealias MSRoutingDestination = MSRoutingDestinationProtocol & MSRoutingViewProviderProtocol
     
-    func route(destination: RoutingDestination, presentationStyle: PresentationStyle) {
+    func route(destination: MSRoutingDestination, presentationStyle: MSPresentationStyle) {
         let view = destination.destinationView
         let viewController = router.buildViewController(presentingView: .viewController(view))
         
