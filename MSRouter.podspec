@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "MSRouter"
-  spec.version      = "0.1"
+  spec.version      = "0.1.1"
   spec.summary      = "Simple router for UIKit and SwiftUI iOS applications."
   
 
@@ -60,7 +60,8 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-   spec.platform     = :ios, "13.0"
+   spec.platform      = :ios, "13.0"
+   spec.swift_version = "5.0"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

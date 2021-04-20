@@ -1,5 +1,5 @@
 PODS:
-  - MSRouter (0.1)
+  - MSRouter (0.1.1)
 
 DEPENDENCIES:
   - MSRouter (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MSRouter: 60541aba6b078bd62f2013bac9418d4c8f9641a7
+  MSRouter: da925772b3b6117d6c0df5a17d20d9c1524179be
 
 PODFILE CHECKSUM: 511b2acf4f5e006f652fbfb0edf10f9ca02a7fdb
 
