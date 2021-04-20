@@ -14,8 +14,9 @@ struct ContentView: View {
     var body: some View {
         VStack {
             SettingsView(viewModel: $viewModel.settingsViewModel)
+                .padding(.vertical, 20.0)
             
-            Text("Choose the color")
+            Text("Go to colored view")
                 .font(.system(size: 16.0))
             
             HStack {
@@ -24,12 +25,8 @@ struct ContentView: View {
                         Button(action: {
                             let color = viewModel.colors[colorIndex]
                             let destination = DetailDestination.detailView(color: color)
-                            let viewFrame = geometry.frame(in: .global)
-                            let viewCenter = CGPoint(x: viewFrame.midX, y: viewFrame.midY)
-                            let transition = MSNavigationTransition(
-                                presented: ScaleTransition(duration: 0.6, scale: 1.0, center: viewCenter),
-                                dismissed: ScaleTransition(duration: 0.6, scale: 0.0, center: viewCenter)
-                            )
+                            let originRect = geometry.frame(in: .global)
+                            let transition = configureTransition(originRect: originRect)
                             
                             viewModel.state = .navigate(destination: destination, transition: transition)
                         }, label: {
@@ -44,25 +41,42 @@ struct ContentView: View {
             
             Text("or")
             
-            Button(action: {
-                let destination = ControllerDestination.simpleText
-
-                viewModel.state = .navigate(destination: destination, transition: nil)
-            }, label: {
-                Text("Go to simple controller")
-                    .padding()
+            GeometryReader { geometry in
+                Button(action: {
+                    let destination = ControllerDestination.simpleText
+                    let originRect = geometry.frame(in: .global)
+                    let transition = configureTransition(originRect: originRect)
                     
-                    .background(Color.init(UIColor.lightGray.withAlphaComponent(0.2)))
-                    .cornerRadius(20.0)
-                    .clipped()
-                    .padding()
-            
-            })
+                    viewModel.state = .navigate(destination: destination, transition: transition)
+                }, label: {
+                    Text("Go to simple controller")
+                        .padding()
+                        .background(Color(UIColor.lightGray.withAlphaComponent(0.2)))
+                        .cornerRadius(20.0)
+                        .clipped()
+                        .padding()
+                })
+                .frame(width: geometry.size.width)
+            }
+            .frame(maxHeight: 85)
         }
         .padding()
     }
 }
 
+// MARK: Public methods
+extension ContentView {
+    func configureTransition(originRect: CGRect) -> MSNavigationTransition {
+        let viewCenter = CGPoint(x: originRect.midX, y: originRect.midY)
+        
+        return MSNavigationTransition(
+            presented: ScaleTransition(duration: 0.6, scale: 1.0, center: viewCenter),
+            dismissed: ScaleTransition(duration: 0.6, scale: 0.0, center: viewCenter)
+        )
+    }
+}
+
+// MARK: Preview
 struct ContentView_Previews: PreviewProvider {
     static var viewModel = ContentViewModel()
     

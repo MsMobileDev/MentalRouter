@@ -41,15 +41,22 @@ private extension ContentViewModel {
             break
             
         case let .navigate(destination, transition):
+            let presentationStyle: MSPresentationStyle
+            
+            switch settingsViewModel.presentationMode {
+            case .custom:
+                guard let navigationTransition = transition else { fatalError() }
+                
+                presentationStyle = .custom(transition: navigationTransition)
+                
+            case .present, .push:
+                presentationStyle = settingsViewModel.presentationStyle
+            }
+            
             if let destination = destination as? DetailDestination {
-                if let navigationTransition = transition {
-                    MSRouter.detailRouter.route(destination: destination,
-                                              presentationStyle: .custom(transition: navigationTransition))
-                } else {
-                    MSRouter.detailRouter.route(destination: destination, presentationStyle: settingsViewModel.presentationStyle)
-                }
+                MSRouter.detailRouter.route(destination: destination, presentationStyle: presentationStyle)
             } else if let destination = destination as? ControllerDestination {
-                MSRouter.controllerRouter.route(destination: destination, presentationStyle: settingsViewModel.presentationStyle)
+                MSRouter.controllerRouter.route(destination: destination, presentationStyle: presentationStyle)
             }
         }
     }

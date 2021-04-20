@@ -12,7 +12,7 @@ struct SettingsView: View {
     
     var body: some View {
         VStack {
-            Text("Presentation mode")
+            Text("Choose presentation mode")
             Picker("PresentationMode", selection: $viewModel.presentationMode.animation()) {
                 ForEach(SettingsViewModel.PresentationMode.allCases) { presentationMode in
                     Text(presentationMode.description)
