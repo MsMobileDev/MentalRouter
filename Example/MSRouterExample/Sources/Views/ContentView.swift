@@ -11,6 +11,9 @@ import MSRouter
 struct ContentView: View {
     @State var viewModel: ContentViewModel
     
+    @State private var colorRects: [UIColor: CGRect] = [:]
+    @State private var controllerRect: CGRect?
+    
     var body: some View {
         VStack {
             SettingsView(viewModel: $viewModel.settingsViewModel)
@@ -21,44 +24,39 @@ struct ContentView: View {
             
             HStack {
                 ForEach(0..<viewModel.colors.count) { colorIndex in
-                    GeometryReader { geometry in
-                        Button(action: {
-                            let color = viewModel.colors[colorIndex]
-                            let destination = DetailDestination.detailView(color: color)
-                            let originRect = geometry.frame(in: .global)
-                            let transition = configureTransition(originRect: originRect)
-                            
-                            viewModel.state = .navigate(destination: destination, transition: transition)
-                        }, label: {
-                            Rectangle()
-                                .fill(Color(viewModel.colors[colorIndex]))
-                        })
-                    }
-                    .frame(width: 50, height: 50)
+                    Button(action: {
+                        let color = viewModel.colors[colorIndex]
+                        let destination = DetailDestination.detailView(color: color)
+                        let transition = configureTransition(originRect: colorRects[color])
+                        
+                        viewModel.state = .navigate(destination: destination, transition: transition)
+                    }, label: {
+                        Rectangle()
+                            .fill(Color(viewModel.colors[colorIndex]))
+                            .frame(width: 50, height: 50)
+                        
+                    })
+                    .subscribe(onFrameChange: $colorRects[viewModel.colors[colorIndex]])
                 }
             }
             .padding(.vertical, 15)
             
             Text("or")
             
-            GeometryReader { geometry in
-                Button(action: {
-                    let destination = ControllerDestination.simpleText
-                    let originRect = geometry.frame(in: .global)
-                    let transition = configureTransition(originRect: originRect)
-                    
-                    viewModel.state = .navigate(destination: destination, transition: transition)
-                }, label: {
-                    Text("Go to simple controller")
-                        .padding()
-                        .background(Color(UIColor.lightGray.withAlphaComponent(0.2)))
-                        .cornerRadius(20.0)
-                        .clipped()
-                        .padding()
-                })
-                .frame(width: geometry.size.width)
-            }
-            .frame(maxHeight: 85)
+            Button(action: {
+                let destination = ControllerDestination.simpleText
+                let transition = configureTransition(originRect: controllerRect)
+                
+                viewModel.state = .navigate(destination: destination, transition: transition)
+            }, label: {
+                Text("Go to simple controller")
+                    .padding()
+                    .background(Color(UIColor.lightGray.withAlphaComponent(0.2)))
+                    .cornerRadius(20.0)
+                    .clipped()
+                    .padding()
+            })
+            .subscribe(onFrameChange: $controllerRect)
         }
         .padding()
     }
@@ -66,8 +64,8 @@ struct ContentView: View {
 
 // MARK: Public methods
 extension ContentView {
-    func configureTransition(originRect: CGRect) -> MSNavigationTransition {
-        let viewCenter = CGPoint(x: originRect.midX, y: originRect.midY)
+    func configureTransition(originRect: CGRect?) -> MSNavigationTransition {
+        let viewCenter = CGPoint(x: originRect?.midX ?? .zero, y: originRect?.midY ?? .zero)
         
         return MSNavigationTransition(
             presented: ScaleTransition(duration: 0.6, scale: 1.0, center: viewCenter),

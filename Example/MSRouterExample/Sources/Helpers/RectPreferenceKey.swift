@@ -5,7 +5,7 @@
 //  Created by Olga Shilenko on 22.04.2021.
 //
 
-import Foundation
+import SwiftUI
 
 struct RectPreferenceKey: PreferenceKey {
     typealias Value = CGRect
