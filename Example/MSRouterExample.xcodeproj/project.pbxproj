@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2752DAEF49BCA0CBBAD5FF54 /* Pods_MSRouterExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1E6183C1B4B2933BC87F886 /* Pods_MSRouterExample.framework */; };
+		5317702926317FE800E3BD8E /* RectPreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5317702826317FE800E3BD8E /* RectPreferenceKey.swift */; };
+		5317702D26317FFE00E3BD8E /* RectModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5317702C26317FFE00E3BD8E /* RectModifier.swift */; };
 		531FA744261F377500739BEE /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531FA743261F377500739BEE /* DetailView.swift */; };
 		531FA74F261F4AAD00739BEE /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531FA74E261F4AAD00739BEE /* ContentViewModel.swift */; };
 		5326F888261CC9CB006FBB8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326F887261CC9CB006FBB8A /* AppDelegate.swift */; };
@@ -31,6 +33,8 @@
 /* Begin PBXFileReference section */
 		339AABBEB2717471728F1E51 /* Pods-MSRouterExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSRouterExample.debug.xcconfig"; path = "Target Support Files/Pods-MSRouterExample/Pods-MSRouterExample.debug.xcconfig"; sourceTree = "<group>"; };
 		52B2DFB83F4FF9C8A4885546 /* Pods-MSRouterExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSRouterExample.release.xcconfig"; path = "Target Support Files/Pods-MSRouterExample/Pods-MSRouterExample.release.xcconfig"; sourceTree = "<group>"; };
+		5317702826317FE800E3BD8E /* RectPreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectPreferenceKey.swift; sourceTree = "<group>"; };
+		5317702C26317FFE00E3BD8E /* RectModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectModifier.swift; sourceTree = "<group>"; };
 		531FA743261F377500739BEE /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		531FA74E261F4AAD00739BEE /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		5326F884261CC9CB006FBB8A /* MSRouterExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSRouterExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +80,15 @@
 				E1E6183C1B4B2933BC87F886 /* Pods_MSRouterExample.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5317702726317F3100E3BD8E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5317702826317FE800E3BD8E /* RectPreferenceKey.swift */,
+				5317702C26317FFE00E3BD8E /* RectModifier.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		531FA73F261F375B00739BEE /* Views */ = {
@@ -174,6 +187,7 @@
 		53F4E212262F12D2003CD2DD /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				5317702726317F3100E3BD8E /* Helpers */,
 				5361AF37261F73C600A31E0C /* Extensions */,
 				531FA73F261F375B00739BEE /* Views */,
 				53F4E20D262F123B003CD2DD /* Controllers */,
@@ -332,9 +346,11 @@
 				5361AF39261F73DA00A31E0C /* View+AnyView.swift in Sources */,
 				531FA744261F377500739BEE /* DetailView.swift in Sources */,
 				53817F7A262451CE0088A560 /* SettingsViewModel.swift in Sources */,
+				5317702D26317FFE00E3BD8E /* RectModifier.swift in Sources */,
 				53817F77262451140088A560 /* SettingsView.swift in Sources */,
 				53F4E230262F1451003CD2DD /* ScaleTrasition.swift in Sources */,
 				53545AF72620BCB200C81C21 /* Router+CustomRouters.swift in Sources */,
+				5317702926317FE800E3BD8E /* RectPreferenceKey.swift in Sources */,
 				53F4E22F262F1451003CD2DD /* DetailDestination.swift in Sources */,
 				53545AE82620A5AD00C81C21 /* DetailViewModel.swift in Sources */,
 				5326F88A261CC9CB006FBB8A /* SceneDelegate.swift in Sources */,
