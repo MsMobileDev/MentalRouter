@@ -29,7 +29,7 @@ import MSRouter
 
 ### Navigation concept
 
-MSRouter provides router builded on UIKit navigation stack. It means that using MSRouter in your application, you can show SwiftUI view and continue use all well known features of UINavigationController. For successful navigation in project with MSRouter you should:
+MSRouter provides router builded on UIKit navigation stack. It means that using MSRouter you can use SwiftUI views and all well-known features of UINavigationController together. For successful navigation in project with MSRouter you should:
 * Initialise global application router -> [Initial setup](#initial-setup)
 * Create a routing destination for screen -> [Routing destination](#routing-destination)
 * Create a local router for screen -> [Local router](#local-router)
@@ -61,7 +61,7 @@ window.makeKeyAndVisible()
 
 ### Routing destination
 
-Create a routing destination for each screen and subscribe on `MSRoutingDestinationProtocol` protocol to pass it in `MSRouter` later. Create enum for each screen where each case will be a route to next screen. To pass the data use parameters of enum's case. For example, routing to `DetailView` in 'Example' project and passing UIColor will look like this:
+Create a routing destination for each screen and subscribe on `MSRoutingDestinationProtocol` protocol to pass it in `MSRouter` later. Create enum for each screen where each case will be a route to next screen. To pass the data use parameters of enum's case. For example, routing to `DetailView` in [Example project](https://github.com/MsMobileDev/MSRouter/tree/development/Example) and passing UIColor will look like this:
 ```Swift
 enum DetailDestination: MSRoutingDestinationProtocol {
     case detailView(color: UIColor)
@@ -97,10 +97,49 @@ With MSRouter is very easy to navigate to SwiftUI view and UIKit controller.
     ```
 
 ### Local router
-// TODO: Push, present, custom transition
+Create a local router for a screen.
+```Swift
+final class DetailRouter {
+    private let router: MSRouter
+
+    init(router: MSRouter) {
+        self.router = router
+    }
+}
+```
+
+Implement `MSRouterProtocol` protocol in local router to be ready for any transition. Pass  ***.push***, ***.present***, ***.replaceRoot*** or ***.custom*** presentation style to parameter `MSPresentationStyle` to modify appearence of transaction.
+```Swift
+// MARK: RouterProtocol
+extension DetailRouter: MSRouterProtocol {
+    typealias MSRoutingDestination = MSRoutingDestinationProtocol & MSRoutingViewProviderProtocol
+
+    func route(destination: MSRoutingDestination, presentationStyle: MSPresentationStyle) {
+        let view = destination.destinationView
+        let viewController = router.buildViewController(presentingView: .viewController(view))
+
+        // Configure navigationItem here if it's needed
+
+        router.navigate(viewController: viewController, presentationStyle: presentationStyle)
+    }
+}
+```
 
 ### Call from UI
-// TODO: implement
+Call local router with appropriate destination on user action.
+```Swift
+Button(action: {
+    let destination = DetailDestination.detailView(color: .red)
+    DetailRouter(router: .default).route(destination: destination, presentationStyle: .push)
+}, label: {
+    Text("Show detail view")
+})
+```
+Or incapsulate this logic in view's view model to follow MVVM paradigm. The example of such implementation you can find in [Example project](https://github.com/MsMobileDev/MSRouter/tree/development/Example).
+
+### Implement custom transition
+
+// TODO
 
 ### License
 MSRouter is released under the MIT license. See [LICENSE](https://github.com/MsMobileDev/MSRouter/blob/development/LICENSE) for details.

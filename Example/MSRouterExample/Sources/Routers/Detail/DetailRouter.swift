@@ -24,7 +24,7 @@ extension DetailRouter: MSRouterProtocol {
         let view = destination.destinationView
         let viewController = router.buildViewController(presentingView: .viewController(view))
         
-        // Configure navigationItem here if it needed
+        // Configure navigationItem here if it's needed
         
         router.navigate(viewController: viewController, presentationStyle: presentationStyle)
     }
