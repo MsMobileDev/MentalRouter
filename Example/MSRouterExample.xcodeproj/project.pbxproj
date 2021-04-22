@@ -87,6 +87,7 @@
 			children = (
 				5317702826317FE800E3BD8E /* RectPreferenceKey.swift */,
 				5317702C26317FFE00E3BD8E /* RectModifier.swift */,
+				53F4E22D262F1451003CD2DD /* ScaleTrasition.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -211,7 +212,6 @@
 			children = (
 				53F4E22C262F1451003CD2DD /* DetailDestination.swift */,
 				53F4E22E262F1451003CD2DD /* DetailRouter.swift */,
-				53F4E22D262F1451003CD2DD /* ScaleTrasition.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
