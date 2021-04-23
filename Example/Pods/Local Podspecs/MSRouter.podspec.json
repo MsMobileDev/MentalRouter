@@ -6,7 +6,7 @@
   "homepage": "https://github.com/MsMobileDev/MSRouter.git",
   "license": {
     "type": "MIT",
-    "file": "MIT_LICENSE.txt"
+    "file": "LICENSE"
   },
   "authors": {
     "Olga Shilenko": "oshilenko@mentalstack.com"

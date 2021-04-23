@@ -7,6 +7,7 @@
 
 import UIKit
 import SwiftUI
+import MSRouter
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -23,11 +24,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let window = UIWindow(windowScene: windowScene)
             
             let contentView = ContentView(viewModel: ContentViewModel()).castToAnyView()
-            let presentingView: PresentingView = .navigationController(.viewController(contentView))
-            let viewController = Router.default.buildViewController(presentingView: presentingView)
+            let presentingView: MSPresentingView = .navigationController(.viewController(contentView))
+            let viewController = MSRouter.default.buildViewController(presentingView: presentingView)
             
-            Router.default.initialSetup(window: window)
-            Router.default.navigate(viewController: viewController, presentationStyle: .replaceRoot)
+            MSRouter.default.initialSetup(window: window)
+            MSRouter.default.navigate(viewController: viewController, presentationStyle: .replaceRoot)
             
             self.window = window
             window.makeKeyAndVisible()

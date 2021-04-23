@@ -7,25 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		151ED28AA1ADE14A4BF27566554C9D5B /* UIViewController+Presented.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BC3721C6B01B386A404769EBAFC352D /* UIViewController+Presented.swift */; };
-		152E4A58EFB9D3A91C0146398401424A /* MSRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C185990221DDF1E379738A3ADA2041B /* MSRouter.swift */; };
-		34EA353619A7AE197B645DC109479B3C /* MSPresentationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87EBE58BEA1734C73BAED5465BAE9FB1 /* MSPresentationStyle.swift */; };
-		5F62BE5B1DFBD8D6E245656C825A3588 /* MSRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6716F74A250C135A24ECE9C84D68C0 /* MSRouterProtocol.swift */; };
-		5F66E6F1C16A51E6A24ED87175B28AAD /* MSPresentingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BFAC0BEB1D01916984CC650C28B9EE9 /* MSPresentingView.swift */; };
-		6D45C68DDBA810881CE68D63368B06A2 /* MSNavigationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E53A389A2248270E1DB0C8A6341512D /* MSNavigationTransition.swift */; };
-		72F87784E8E22675A28FBBE5CF9E6396 /* MSRoutingDestinationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F01BA3723CB3B5E8A75A02F759D2A4F /* MSRoutingDestinationProtocol.swift */; };
-		733E67499E9F440AB870126054BB3624 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		1B3F75F725B900D19F0D8AE1BE592B3F /* MSRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEDFC0854BBA8CED572E624EDABB734 /* MSRouter-dummy.m */; };
+		24A6B31ABE255B09FF93BE6B6B867152 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		29B3E9BBBA5A5C7734091EFA3EE24E36 /* MSPresentingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D2E1F32794CA577C1EBC9F372D7F13 /* MSPresentingView.swift */; };
+		4D417A36B95B0DC1C5AF3E9389D94D24 /* MSRoutingControllerProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2655755EBF57B1780370A986CFF2046 /* MSRoutingControllerProviderProtocol.swift */; };
+		4EAFBDDA9E06B7A5D3ED52E3E83DC7E1 /* MSRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98E04D6750A898C86E6C51E69A32EF4 /* MSRouter.swift */; };
+		524105B88603C0D4C52A1CE6FC8CEF68 /* MSRoutingViewProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35C9205B68338FD53CD6977511F1AA3 /* MSRoutingViewProviderProtocol.swift */; };
+		5BAC67AB25FC5479CF88551029AF342D /* UIViewController+Presented.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3863A05081C3E33D2311EBA2624390F /* UIViewController+Presented.swift */; };
+		7BC83BC81F5A205FF156F4D2AC86DE5C /* MSTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014406CBE4AD66C596D6049454840F2C /* MSTransitionHandler.swift */; };
 		7FBD390C9B79C0FB661D2386AA6738F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		885A37869AAF505290FDBA1072DFC477 /* MSRouter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 24DAA3F059242CD77DAF514583221A9D /* MSRouter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		89EA6D710B3C91146704D96012B7FC47 /* MSTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7187E6D33FDF688C927B33A686A6D6A /* MSTransitionHandler.swift */; };
-		95466C6DD5A0E54E0511A6E5ACE11AD9 /* MSRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E4D53534874E158AAD8BC3F45C56CD2 /* MSRouter-dummy.m */; };
-		9DC1244583C7A9E58E2B7F70C9214805 /* MSRoutingViewProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76544E1F647D36D06A5BE68181DE44EE /* MSRoutingViewProviderProtocol.swift */; };
+		8AF987A2EEC3D18391904F0951B61257 /* MSRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9903B1DCAE319C2E78FECE2B155BDD /* MSRouterProtocol.swift */; };
+		94D5316D2E9FF98B5D63E4E171EBC64E /* MSNavigationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813A0C0A7741CB32A5BED2C2471D889D /* MSNavigationTransition.swift */; };
+		AE52FD0FA274A1E7DB82532201B27B1B /* MSRouter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5CB5DBCFEA1FA0DE66698BB970F9C3C /* MSRouter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C040B9D9A2BDA0129350C1440DBC5DEF /* Pods-MSRouterExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03435A55DBAE79A45F760223D22452FC /* Pods-MSRouterExample-dummy.m */; };
 		C6E24749D0D1996644A8A1FE1E706032 /* Pods-MSRouterExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 478C863BFC45CB9EF13A4DE0D1243EE2 /* Pods-MSRouterExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D50BEA44BB406B8F1F1A9E9D42E6AC47 /* MSRoutingDestinationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F95C48A093EE8B70717AD7A593AD3A3 /* MSRoutingDestinationProtocol.swift */; };
+		D720649170D7388FC575971B2E5337BB /* MSPresentationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247277D38D4134F1362429F7DACD64E /* MSPresentationStyle.swift */; };
+		F2F208C71F795821C8240E8A01F49923 /* MSPresentingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FF7051627A3B69E1B291C51A616744 /* MSPresentingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		136C9B0D81CB077FF177C6C166B6AB57 /* PBXContainerItemProxy */ = {
+		2F7A825FB483A4F1715C94D79303783C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -35,40 +37,51 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		014406CBE4AD66C596D6049454840F2C /* MSTransitionHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSTransitionHandler.swift; sourceTree = "<group>"; };
 		03435A55DBAE79A45F760223D22452FC /* Pods-MSRouterExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MSRouterExample-dummy.m"; sourceTree = "<group>"; };
-		24DAA3F059242CD77DAF514583221A9D /* MSRouter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MSRouter-umbrella.h"; sourceTree = "<group>"; };
+		0BB852846325E23A76200E67C68E51D0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		29C0D942A993F7415B3257633D476AD3 /* Pods-MSRouterExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MSRouterExample-Info.plist"; sourceTree = "<group>"; };
-		2BFAC0BEB1D01916984CC650C28B9EE9 /* MSPresentingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSPresentingView.swift; sourceTree = "<group>"; };
-		33F23AF8C78280F0D792C146B1222558 /* MSRouter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MSRouter.release.xcconfig; sourceTree = "<group>"; };
+		3ED7BE62F52385103DE9F220D654CF15 /* MSRouter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MSRouter-Info.plist"; sourceTree = "<group>"; };
+		3F87B0FB9BF0BB4E4A4550929B413CB4 /* MSRouter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MSRouter-prefix.pch"; sourceTree = "<group>"; };
+		3F95C48A093EE8B70717AD7A593AD3A3 /* MSRoutingDestinationProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSRoutingDestinationProtocol.swift; sourceTree = "<group>"; };
+		41BAB492ECF94CF521EC28A66395EB43 /* MSRouter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MSRouter.release.xcconfig; sourceTree = "<group>"; };
+		44B3D19C6E60F9F1CF353E9A4B659DDD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		44CFDE51B508A4512A39B8C4A0122B8F /* MSRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MSRouter.framework; path = MSRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		478C863BFC45CB9EF13A4DE0D1243EE2 /* Pods-MSRouterExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MSRouterExample-umbrella.h"; sourceTree = "<group>"; };
 		4791FA08E3D64E36459D7E96524A1C14 /* Pods_MSRouterExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MSRouterExample.framework; path = "Pods-MSRouterExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4F01BA3723CB3B5E8A75A02F759D2A4F /* MSRoutingDestinationProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSRoutingDestinationProtocol.swift; sourceTree = "<group>"; };
+		5CEDFC0854BBA8CED572E624EDABB734 /* MSRouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MSRouter-dummy.m"; sourceTree = "<group>"; };
 		66DC68C55815BFBDEE247F41F7AA5AA2 /* Pods-MSRouterExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MSRouterExample.release.xcconfig"; sourceTree = "<group>"; };
-		6BC3721C6B01B386A404769EBAFC352D /* UIViewController+Presented.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+Presented.swift"; sourceTree = "<group>"; };
-		6C185990221DDF1E379738A3ADA2041B /* MSRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSRouter.swift; sourceTree = "<group>"; };
-		6E53A389A2248270E1DB0C8A6341512D /* MSNavigationTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSNavigationTransition.swift; sourceTree = "<group>"; };
 		703CCA6C1660C7B0F45F1924293565C1 /* Pods-MSRouterExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MSRouterExample-frameworks.sh"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		76544E1F647D36D06A5BE68181DE44EE /* MSRoutingViewProviderProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSRoutingViewProviderProtocol.swift; sourceTree = "<group>"; };
-		7E4D53534874E158AAD8BC3F45C56CD2 /* MSRouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MSRouter-dummy.m"; sourceTree = "<group>"; };
-		87EBE58BEA1734C73BAED5465BAE9FB1 /* MSPresentationStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSPresentationStyle.swift; sourceTree = "<group>"; };
+		813A0C0A7741CB32A5BED2C2471D889D /* MSNavigationTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSNavigationTransition.swift; sourceTree = "<group>"; };
+		85DFC15CB7CC15B84E80066CD6648122 /* MSRouter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MSRouter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		85FF7051627A3B69E1B291C51A616744 /* MSPresentingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSPresentingViewController.swift; sourceTree = "<group>"; };
+		8758860D128822A7FA75037C0EB83708 /* MSRouter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MSRouter.modulemap; sourceTree = "<group>"; };
 		8A6E972D5191C3DF391676588AC27431 /* Pods-MSRouterExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MSRouterExample.debug.xcconfig"; sourceTree = "<group>"; };
+		8B9903B1DCAE319C2E78FECE2B155BDD /* MSRouterProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSRouterProtocol.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A3E9C850F15C7C5689EAFD7F67BC0734 /* MSRouter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MSRouter-Info.plist"; sourceTree = "<group>"; };
 		A42FB85E55AED756BA2B8988B0460823 /* Pods-MSRouterExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MSRouterExample.modulemap"; sourceTree = "<group>"; };
-		B7187E6D33FDF688C927B33A686A6D6A /* MSTransitionHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSTransitionHandler.swift; sourceTree = "<group>"; };
-		C38CAE631916981B36AC1F7ECA658D7B /* MSRouter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MSRouter.debug.xcconfig; sourceTree = "<group>"; };
-		C4682AC1C3736ACB0354AFED6AEDF40F /* MIT_LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; path = MIT_LICENSE.txt; sourceTree = "<group>"; };
-		D011638EF70AB024ED6F8B4DC150E553 /* MSRouter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MSRouter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A5CB5DBCFEA1FA0DE66698BB970F9C3C /* MSRouter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MSRouter-umbrella.h"; sourceTree = "<group>"; };
+		A98E04D6750A898C86E6C51E69A32EF4 /* MSRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSRouter.swift; sourceTree = "<group>"; };
+		B247277D38D4134F1362429F7DACD64E /* MSPresentationStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSPresentationStyle.swift; sourceTree = "<group>"; };
+		C3863A05081C3E33D2311EBA2624390F /* UIViewController+Presented.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+Presented.swift"; sourceTree = "<group>"; };
+		D2655755EBF57B1780370A986CFF2046 /* MSRoutingControllerProviderProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSRoutingControllerProviderProtocol.swift; sourceTree = "<group>"; };
+		D35C9205B68338FD53CD6977511F1AA3 /* MSRoutingViewProviderProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSRoutingViewProviderProtocol.swift; sourceTree = "<group>"; };
+		D6D2E1F32794CA577C1EBC9F372D7F13 /* MSPresentingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSPresentingView.swift; sourceTree = "<group>"; };
 		ED44AEB0BB935BA85AD11F6E4FCF7039 /* Pods-MSRouterExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MSRouterExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		ED5A50B702BC45A6138979E0665CFDE3 /* MSRouter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MSRouter-prefix.pch"; sourceTree = "<group>"; };
-		F55F4256E92C0BF1FEBF94C80AF1F6AD /* MSRouter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MSRouter.modulemap; sourceTree = "<group>"; };
+		EDFE92B12F68D27F541E9896AAA3716D /* MSRouter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MSRouter.debug.xcconfig; sourceTree = "<group>"; };
 		FC187B4F8D36AFCADE8B9BE3CE2BCA6C /* Pods-MSRouterExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MSRouterExample-acknowledgements.plist"; sourceTree = "<group>"; };
-		FD6716F74A250C135A24ECE9C84D68C0 /* MSRouterProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSRouterProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0A9FDBE4C983A332D186DC9951DF9469 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24A6B31ABE255B09FF93BE6B6B867152 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		82E41A809A01A909F67AED89954C8596 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -77,45 +90,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F921DE58CB34C724A7F46A8ECF559E1B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				733E67499E9F440AB870126054BB3624 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		27998B037C0EE1216AE60B7112143C93 /* Extensions */ = {
+		0096B8158BEAA0F09CB415AF18C76F7D /* MSRouter */ = {
 			isa = PBXGroup;
 			children = (
-				6BC3721C6B01B386A404769EBAFC352D /* UIViewController+Presented.swift */,
+				B2EA09AFC0C476F6FCDCF4B317AC417C /* Classes */,
+				1E04398247DF93B469E2F0BC6FA18258 /* Extensions */,
+				08312A1EA3D5C332A2616382E3BFC999 /* Pod */,
+				2151910147D6DCA466260D60E9D6BD57 /* Support Files */,
+			);
+			name = MSRouter;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		08312A1EA3D5C332A2616382E3BFC999 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				44B3D19C6E60F9F1CF353E9A4B659DDD /* LICENSE */,
+				85DFC15CB7CC15B84E80066CD6648122 /* MSRouter.podspec */,
+				0BB852846325E23A76200E67C68E51D0 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		1E04398247DF93B469E2F0BC6FA18258 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C3863A05081C3E33D2311EBA2624390F /* UIViewController+Presented.swift */,
 			);
 			name = Extensions;
 			path = MSRouter/MSRouter/Extensions;
 			sourceTree = "<group>";
 		};
-		4516247D3301A3EA66955ECAE585251A /* Pod */ = {
+		2151910147D6DCA466260D60E9D6BD57 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C4682AC1C3736ACB0354AFED6AEDF40F /* MIT_LICENSE.txt */,
-				D011638EF70AB024ED6F8B4DC150E553 /* MSRouter.podspec */,
+				8758860D128822A7FA75037C0EB83708 /* MSRouter.modulemap */,
+				5CEDFC0854BBA8CED572E624EDABB734 /* MSRouter-dummy.m */,
+				3ED7BE62F52385103DE9F220D654CF15 /* MSRouter-Info.plist */,
+				3F87B0FB9BF0BB4E4A4550929B413CB4 /* MSRouter-prefix.pch */,
+				A5CB5DBCFEA1FA0DE66698BB970F9C3C /* MSRouter-umbrella.h */,
+				EDFE92B12F68D27F541E9896AAA3716D /* MSRouter.debug.xcconfig */,
+				41BAB492ECF94CF521EC28A66395EB43 /* MSRouter.release.xcconfig */,
 			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		46228CCFC69C118E291B5095E4384776 /* MSRouter */ = {
-			isa = PBXGroup;
-			children = (
-				5059D7B988E38B957D85BA1B108F7190 /* Classes */,
-				27998B037C0EE1216AE60B7112143C93 /* Extensions */,
-				4516247D3301A3EA66955ECAE585251A /* Pod */,
-				970B6D5EA5EB714B8333448EA387400F /* Support Files */,
-			);
-			name = MSRouter;
-			path = ../..;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MSRouter";
 			sourceTree = "<group>";
 		};
 		4C967D3B31A8A58CB9EE372D3038AE01 /* Pods-MSRouterExample */ = {
@@ -133,22 +154,6 @@
 			);
 			name = "Pods-MSRouterExample";
 			path = "Target Support Files/Pods-MSRouterExample";
-			sourceTree = "<group>";
-		};
-		5059D7B988E38B957D85BA1B108F7190 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				6E53A389A2248270E1DB0C8A6341512D /* MSNavigationTransition.swift */,
-				87EBE58BEA1734C73BAED5465BAE9FB1 /* MSPresentationStyle.swift */,
-				2BFAC0BEB1D01916984CC650C28B9EE9 /* MSPresentingView.swift */,
-				6C185990221DDF1E379738A3ADA2041B /* MSRouter.swift */,
-				FD6716F74A250C135A24ECE9C84D68C0 /* MSRouterProtocol.swift */,
-				4F01BA3723CB3B5E8A75A02F759D2A4F /* MSRoutingDestinationProtocol.swift */,
-				76544E1F647D36D06A5BE68181DE44EE /* MSRoutingViewProviderProtocol.swift */,
-				B7187E6D33FDF688C927B33A686A6D6A /* MSTransitionHandler.swift */,
-			);
-			name = Classes;
-			path = MSRouter/MSRouter/Classes;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -171,24 +176,27 @@
 		8094C6BB2572101219203A7F9C39F300 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				46228CCFC69C118E291B5095E4384776 /* MSRouter */,
+				0096B8158BEAA0F09CB415AF18C76F7D /* MSRouter */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		970B6D5EA5EB714B8333448EA387400F /* Support Files */ = {
+		B2EA09AFC0C476F6FCDCF4B317AC417C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				F55F4256E92C0BF1FEBF94C80AF1F6AD /* MSRouter.modulemap */,
-				7E4D53534874E158AAD8BC3F45C56CD2 /* MSRouter-dummy.m */,
-				A3E9C850F15C7C5689EAFD7F67BC0734 /* MSRouter-Info.plist */,
-				ED5A50B702BC45A6138979E0665CFDE3 /* MSRouter-prefix.pch */,
-				24DAA3F059242CD77DAF514583221A9D /* MSRouter-umbrella.h */,
-				C38CAE631916981B36AC1F7ECA658D7B /* MSRouter.debug.xcconfig */,
-				33F23AF8C78280F0D792C146B1222558 /* MSRouter.release.xcconfig */,
+				813A0C0A7741CB32A5BED2C2471D889D /* MSNavigationTransition.swift */,
+				B247277D38D4134F1362429F7DACD64E /* MSPresentationStyle.swift */,
+				D6D2E1F32794CA577C1EBC9F372D7F13 /* MSPresentingView.swift */,
+				85FF7051627A3B69E1B291C51A616744 /* MSPresentingViewController.swift */,
+				A98E04D6750A898C86E6C51E69A32EF4 /* MSRouter.swift */,
+				8B9903B1DCAE319C2E78FECE2B155BDD /* MSRouterProtocol.swift */,
+				D2655755EBF57B1780370A986CFF2046 /* MSRoutingControllerProviderProtocol.swift */,
+				3F95C48A093EE8B70717AD7A593AD3A3 /* MSRoutingDestinationProtocol.swift */,
+				D35C9205B68338FD53CD6977511F1AA3 /* MSRoutingViewProviderProtocol.swift */,
+				014406CBE4AD66C596D6049454840F2C /* MSTransitionHandler.swift */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/MSRouter";
+			name = Classes;
+			path = MSRouter/MSRouter/Classes;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -221,11 +229,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		60914316C42E119289479066DAC9E253 /* Headers */ = {
+		47349AD7E92C965864C23DE8B0B00C05 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				885A37869AAF505290FDBA1072DFC477 /* MSRouter-umbrella.h in Headers */,
+				AE52FD0FA274A1E7DB82532201B27B1B /* MSRouter-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,12 +250,12 @@
 /* Begin PBXNativeTarget section */
 		B27A15A78A45659BDBF99D061FD854E8 /* MSRouter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8775861127C6888523BDEDEE62627BBD /* Build configuration list for PBXNativeTarget "MSRouter" */;
+			buildConfigurationList = 816D8CE188D3FB982BBE93EAAC9C3E72 /* Build configuration list for PBXNativeTarget "MSRouter" */;
 			buildPhases = (
-				60914316C42E119289479066DAC9E253 /* Headers */,
-				D73B4CC12FFEC97688B2D66BFB9C8E38 /* Sources */,
-				F921DE58CB34C724A7F46A8ECF559E1B /* Frameworks */,
-				C4859FCFB492641706D30FE90F2FAC71 /* Resources */,
+				47349AD7E92C965864C23DE8B0B00C05 /* Headers */,
+				A5920E4826A028C5B6BDE966DBD911A5 /* Sources */,
+				0A9FDBE4C983A332D186DC9951DF9469 /* Frameworks */,
+				612FABB36A6F534A59833C6C32114155 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -270,7 +278,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				35234E0F2F02ABE5421AE25F98C2942B /* PBXTargetDependency */,
+				63524F7E1A80977E027B862C3C0DD021 /* PBXTargetDependency */,
 			);
 			name = "Pods-MSRouterExample";
 			productName = "Pods-MSRouterExample";
@@ -313,7 +321,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C4859FCFB492641706D30FE90F2FAC71 /* Resources */ = {
+		612FABB36A6F534A59833C6C32114155 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -323,20 +331,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D73B4CC12FFEC97688B2D66BFB9C8E38 /* Sources */ = {
+		A5920E4826A028C5B6BDE966DBD911A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D45C68DDBA810881CE68D63368B06A2 /* MSNavigationTransition.swift in Sources */,
-				34EA353619A7AE197B645DC109479B3C /* MSPresentationStyle.swift in Sources */,
-				5F66E6F1C16A51E6A24ED87175B28AAD /* MSPresentingView.swift in Sources */,
-				95466C6DD5A0E54E0511A6E5ACE11AD9 /* MSRouter-dummy.m in Sources */,
-				152E4A58EFB9D3A91C0146398401424A /* MSRouter.swift in Sources */,
-				5F62BE5B1DFBD8D6E245656C825A3588 /* MSRouterProtocol.swift in Sources */,
-				72F87784E8E22675A28FBBE5CF9E6396 /* MSRoutingDestinationProtocol.swift in Sources */,
-				9DC1244583C7A9E58E2B7F70C9214805 /* MSRoutingViewProviderProtocol.swift in Sources */,
-				89EA6D710B3C91146704D96012B7FC47 /* MSTransitionHandler.swift in Sources */,
-				151ED28AA1ADE14A4BF27566554C9D5B /* UIViewController+Presented.swift in Sources */,
+				94D5316D2E9FF98B5D63E4E171EBC64E /* MSNavigationTransition.swift in Sources */,
+				D720649170D7388FC575971B2E5337BB /* MSPresentationStyle.swift in Sources */,
+				29B3E9BBBA5A5C7734091EFA3EE24E36 /* MSPresentingView.swift in Sources */,
+				F2F208C71F795821C8240E8A01F49923 /* MSPresentingViewController.swift in Sources */,
+				1B3F75F725B900D19F0D8AE1BE592B3F /* MSRouter-dummy.m in Sources */,
+				4EAFBDDA9E06B7A5D3ED52E3E83DC7E1 /* MSRouter.swift in Sources */,
+				8AF987A2EEC3D18391904F0951B61257 /* MSRouterProtocol.swift in Sources */,
+				4D417A36B95B0DC1C5AF3E9389D94D24 /* MSRoutingControllerProviderProtocol.swift in Sources */,
+				D50BEA44BB406B8F1F1A9E9D42E6AC47 /* MSRoutingDestinationProtocol.swift in Sources */,
+				524105B88603C0D4C52A1CE6FC8CEF68 /* MSRoutingViewProviderProtocol.swift in Sources */,
+				7BC83BC81F5A205FF156F4D2AC86DE5C /* MSTransitionHandler.swift in Sources */,
+				5BAC67AB25FC5479CF88551029AF342D /* UIViewController+Presented.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,11 +361,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		35234E0F2F02ABE5421AE25F98C2942B /* PBXTargetDependency */ = {
+		63524F7E1A80977E027B862C3C0DD021 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MSRouter;
 			target = B27A15A78A45659BDBF99D061FD854E8 /* MSRouter */;
-			targetProxy = 136C9B0D81CB077FF177C6C166B6AB57 /* PBXContainerItemProxy */;
+			targetProxy = 2F7A825FB483A4F1715C94D79303783C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -397,9 +407,9 @@
 			};
 			name = Debug;
 		};
-		53D3EABBDC220AAEBA6DEA9804863E39 /* Debug */ = {
+		22ADDDCE3375EF8331249A801EB93B60 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C38CAE631916981B36AC1F7ECA658D7B /* MSRouter.debug.xcconfig */;
+			baseConfigurationReference = 41BAB492ECF94CF521EC28A66395EB43 /* MSRouter.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -427,10 +437,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -560,9 +571,9 @@
 			};
 			name = Release;
 		};
-		C76945FC0DF758B310E06591E240947C /* Release */ = {
+		C27756BAB984F338776E3415EFA1790A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33F23AF8C78280F0D792C146B1222558 /* MSRouter.release.xcconfig */;
+			baseConfigurationReference = EDFE92B12F68D27F541E9896AAA3716D /* MSRouter.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -590,11 +601,10 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		DB28679C5D59C41FC0D6E70208B0F25D /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -646,11 +656,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8775861127C6888523BDEDEE62627BBD /* Build configuration list for PBXNativeTarget "MSRouter" */ = {
+		816D8CE188D3FB982BBE93EAAC9C3E72 /* Build configuration list for PBXNativeTarget "MSRouter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				53D3EABBDC220AAEBA6DEA9804863E39 /* Debug */,
-				C76945FC0DF758B310E06591E240947C /* Release */,
+				C27756BAB984F338776E3415EFA1790A /* Debug */,
+				22ADDDCE3375EF8331249A801EB93B60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

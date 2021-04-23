@@ -5,15 +5,15 @@
 //  Created by Olga Shilenko on 12.04.2021.
 //
 
-import Foundation
 import SwiftUI
+import MSRouter
 
 struct SettingsViewModel {
     var presentationMode: PresentationMode = .push
     var modalPresentationStyle: ModalPresentationStyle = .pageSheet
     var modalTransitionStyle: ModalTransitionStyle = .coverVertical
     
-    var presentationStyle: PresentationStyle {
+    var presentationStyle: MSPresentationStyle {
         switch presentationMode {
         case .push:
             return .push
@@ -21,6 +21,9 @@ struct SettingsViewModel {
         case .present:
             return .present(presentationStyle: modalPresentationStyle.uiModalPresentationStyle,
                             transitionStyle: modalTransitionStyle)
+            
+        case .custom:
+            return .custom(transition: MSNavigationTransition(presented: nil, dismissed: nil))
         }
     }
 }
@@ -31,6 +34,7 @@ extension SettingsViewModel {
     enum PresentationMode: Int, CaseIterable, Identifiable {
         case push
         case present
+        case custom
         
         public var id: Int { return rawValue }
         
@@ -41,6 +45,9 @@ extension SettingsViewModel {
                 
             case .present:
                 return "present"
+                
+            case .custom:
+                return "custom"
             }
         }
     }

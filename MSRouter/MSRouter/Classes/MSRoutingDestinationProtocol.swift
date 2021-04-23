@@ -7,4 +7,5 @@
 
 import Foundation
 
+/// Routing destination protocol
 public protocol MSRoutingDestinationProtocol {}

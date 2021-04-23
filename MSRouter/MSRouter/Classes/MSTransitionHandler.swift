@@ -7,9 +7,16 @@
 
 import UIKit
 
+/// Class provides transition handler
 public final class MSTransitionHandler: NSObject {
+    /// Navigation transition
     public var navigationTransition: MSNavigationTransition
     
+    /// Public initialiser of MSTransitionHandler class
+    ///
+    ///  - Parameters:
+    ///     - navigationTransition: MSNavigationTransition
+    ///
     public init(navigationTransition: MSNavigationTransition) {
         self.navigationTransition = navigationTransition
     }

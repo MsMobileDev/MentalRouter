@@ -11,4 +11,8 @@ extension View {
     func castToAnyView() -> AnyView {
         return AnyView(self)
     }
+    
+    func subscribe(onFrameChange rect: Binding<CGRect?>) -> some View {
+        self.modifier(RectModifier(frame: rect))
+    }
 }
