@@ -7,153 +7,137 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B3F75F725B900D19F0D8AE1BE592B3F /* MSRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEDFC0854BBA8CED572E624EDABB734 /* MSRouter-dummy.m */; };
-		24A6B31ABE255B09FF93BE6B6B867152 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		29B3E9BBBA5A5C7734091EFA3EE24E36 /* MSPresentingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D2E1F32794CA577C1EBC9F372D7F13 /* MSPresentingView.swift */; };
-		4D417A36B95B0DC1C5AF3E9389D94D24 /* MSRoutingControllerProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2655755EBF57B1780370A986CFF2046 /* MSRoutingControllerProviderProtocol.swift */; };
-		4EAFBDDA9E06B7A5D3ED52E3E83DC7E1 /* MSRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98E04D6750A898C86E6C51E69A32EF4 /* MSRouter.swift */; };
-		524105B88603C0D4C52A1CE6FC8CEF68 /* MSRoutingViewProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D35C9205B68338FD53CD6977511F1AA3 /* MSRoutingViewProviderProtocol.swift */; };
-		5BAC67AB25FC5479CF88551029AF342D /* UIViewController+Presented.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3863A05081C3E33D2311EBA2624390F /* UIViewController+Presented.swift */; };
-		7BC83BC81F5A205FF156F4D2AC86DE5C /* MSTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014406CBE4AD66C596D6049454840F2C /* MSTransitionHandler.swift */; };
-		7FBD390C9B79C0FB661D2386AA6738F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		8AF987A2EEC3D18391904F0951B61257 /* MSRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9903B1DCAE319C2E78FECE2B155BDD /* MSRouterProtocol.swift */; };
-		94D5316D2E9FF98B5D63E4E171EBC64E /* MSNavigationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813A0C0A7741CB32A5BED2C2471D889D /* MSNavigationTransition.swift */; };
-		AE52FD0FA274A1E7DB82532201B27B1B /* MSRouter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5CB5DBCFEA1FA0DE66698BB970F9C3C /* MSRouter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C040B9D9A2BDA0129350C1440DBC5DEF /* Pods-MSRouterExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03435A55DBAE79A45F760223D22452FC /* Pods-MSRouterExample-dummy.m */; };
-		C6E24749D0D1996644A8A1FE1E706032 /* Pods-MSRouterExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 478C863BFC45CB9EF13A4DE0D1243EE2 /* Pods-MSRouterExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D50BEA44BB406B8F1F1A9E9D42E6AC47 /* MSRoutingDestinationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F95C48A093EE8B70717AD7A593AD3A3 /* MSRoutingDestinationProtocol.swift */; };
-		D720649170D7388FC575971B2E5337BB /* MSPresentationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B247277D38D4134F1362429F7DACD64E /* MSPresentationStyle.swift */; };
-		F2F208C71F795821C8240E8A01F49923 /* MSPresentingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85FF7051627A3B69E1B291C51A616744 /* MSPresentingViewController.swift */; };
+		1D2C9FE142ADB58B17FDB67A391E2C37 /* MentalPresentationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED9581F596ED0740675FD58A8AD67B4 /* MentalPresentationStyle.swift */; };
+		3063054BE35E41C4BA21B4A38F6257F6 /* MentalPresentingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B52B6D1A4F659E477B34B45B15862BB5 /* MentalPresentingView.swift */; };
+		3C6EE84CDADB7716D2EB719D345BAF7F /* MentalRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755A18B82EBD1D9192916DEF41C06E37 /* MentalRouterProtocol.swift */; };
+		48119EE59F87262768260432E44C6757 /* Pods-MentalRouterExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7927CDA34FC72760991F0BE0353C1F06 /* Pods-MentalRouterExample-dummy.m */; };
+		4C5974BAD0A7C3C4AEBDD27D08EE3C91 /* MentalNavigationTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A06968871629A83884365BFED808813 /* MentalNavigationTransition.swift */; };
+		549B13A47613486BC290BDF97C66681E /* MentalRoutingDestinationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44057079C47DA059CA1A568824DBD11 /* MentalRoutingDestinationProtocol.swift */; };
+		58655A6A975D864066B2D51D4F49BB77 /* MentalRoutingControllerProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F2C81053BB6E696B789C14A0258E5 /* MentalRoutingControllerProviderProtocol.swift */; };
+		5E344A43FD224569154DB8A128C535AA /* MentalRouter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7CF38B2D5DCF0A00B07280BFEC56CE6 /* MentalRouter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6FF0F31D29E8CDE7BA1490B33B0358F8 /* MentalTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B0B4D46EA840F2EC734C9DEAF7E25C /* MentalTransitionHandler.swift */; };
+		87BBE8516A69BFADAF186A1E3C370887 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		8ACCAD7C9A221590FDB977CFEF5BAA6A /* UIViewController+Presented.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF333276258E10E3C09A93BA9CA3A847 /* UIViewController+Presented.swift */; };
+		8D139D25AF9C3C33A3B4BDFB43B98943 /* MentalRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99CF843D1E69E48DBB7FD68CB31C0C7 /* MentalRouter.swift */; };
+		8D3608071CAF87498582B53DED1B489E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		91C9C1837A26AD67DC18A0BE6A1E5F45 /* MentalPresentingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADAA8E5ED77CC85C10383B20A3E87A94 /* MentalPresentingViewController.swift */; };
+		A91348BCBA93A0B417928A1B9EDEDED4 /* MentalRoutingViewProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25437B4E7B0EDBF4F9104F15B0D48146 /* MentalRoutingViewProviderProtocol.swift */; };
+		C4AFD8D0A20FB97BCB2A78D371FD15A0 /* Pods-MentalRouterExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FC64A9DC04EB34CA4B47D96DD2F8BF9 /* Pods-MentalRouterExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA6C27949F797F1382B3150CE25D965C /* MentalRouter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C89C9A7A7167B9BE29E4A37FB9E008B /* MentalRouter-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2F7A825FB483A4F1715C94D79303783C /* PBXContainerItemProxy */ = {
+		828D4833317B1BF4E22950C3E8E08F99 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B27A15A78A45659BDBF99D061FD854E8;
-			remoteInfo = MSRouter;
+			remoteGlobalIDString = B5BCC0AA7310C8169AB85F2885EC3259;
+			remoteInfo = MentalRouter;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		014406CBE4AD66C596D6049454840F2C /* MSTransitionHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSTransitionHandler.swift; sourceTree = "<group>"; };
-		03435A55DBAE79A45F760223D22452FC /* Pods-MSRouterExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MSRouterExample-dummy.m"; sourceTree = "<group>"; };
-		0BB852846325E23A76200E67C68E51D0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		29C0D942A993F7415B3257633D476AD3 /* Pods-MSRouterExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MSRouterExample-Info.plist"; sourceTree = "<group>"; };
-		3ED7BE62F52385103DE9F220D654CF15 /* MSRouter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MSRouter-Info.plist"; sourceTree = "<group>"; };
-		3F87B0FB9BF0BB4E4A4550929B413CB4 /* MSRouter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MSRouter-prefix.pch"; sourceTree = "<group>"; };
-		3F95C48A093EE8B70717AD7A593AD3A3 /* MSRoutingDestinationProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSRoutingDestinationProtocol.swift; sourceTree = "<group>"; };
-		41BAB492ECF94CF521EC28A66395EB43 /* MSRouter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MSRouter.release.xcconfig; sourceTree = "<group>"; };
-		44B3D19C6E60F9F1CF353E9A4B659DDD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		44CFDE51B508A4512A39B8C4A0122B8F /* MSRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MSRouter.framework; path = MSRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		478C863BFC45CB9EF13A4DE0D1243EE2 /* Pods-MSRouterExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MSRouterExample-umbrella.h"; sourceTree = "<group>"; };
-		4791FA08E3D64E36459D7E96524A1C14 /* Pods_MSRouterExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MSRouterExample.framework; path = "Pods-MSRouterExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5CEDFC0854BBA8CED572E624EDABB734 /* MSRouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MSRouter-dummy.m"; sourceTree = "<group>"; };
-		66DC68C55815BFBDEE247F41F7AA5AA2 /* Pods-MSRouterExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MSRouterExample.release.xcconfig"; sourceTree = "<group>"; };
-		703CCA6C1660C7B0F45F1924293565C1 /* Pods-MSRouterExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MSRouterExample-frameworks.sh"; sourceTree = "<group>"; };
+		08135DA433FB58D27C266D4BB9CD38BE /* Pods-MentalRouterExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MentalRouterExample.debug.xcconfig"; sourceTree = "<group>"; };
+		0A06968871629A83884365BFED808813 /* MentalNavigationTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MentalNavigationTransition.swift; sourceTree = "<group>"; };
+		18E3035A401EC86AB3E2F884FEF024FE /* MentalRouter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MentalRouter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		25437B4E7B0EDBF4F9104F15B0D48146 /* MentalRoutingViewProviderProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MentalRoutingViewProviderProtocol.swift; sourceTree = "<group>"; };
+		2FC64A9DC04EB34CA4B47D96DD2F8BF9 /* Pods-MentalRouterExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MentalRouterExample-umbrella.h"; sourceTree = "<group>"; };
+		3BFAC19ABF53E3ECC1F9B9188A9C8B2B /* MentalRouter-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MentalRouter-Info.plist"; sourceTree = "<group>"; };
+		407ACB479BA32789EA88F2F773A8D302 /* Pods-MentalRouterExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MentalRouterExample.release.xcconfig"; sourceTree = "<group>"; };
+		45C8BDDFE3965970E971C9BA2FDE4DCD /* MentalRouter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MentalRouter.modulemap; sourceTree = "<group>"; };
+		4C89C9A7A7167B9BE29E4A37FB9E008B /* MentalRouter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MentalRouter-dummy.m"; sourceTree = "<group>"; };
+		587A7A22B2AD96EC97BBF914CFB020D5 /* MentalRouter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MentalRouter-prefix.pch"; sourceTree = "<group>"; };
+		631F2C81053BB6E696B789C14A0258E5 /* MentalRoutingControllerProviderProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MentalRoutingControllerProviderProtocol.swift; sourceTree = "<group>"; };
+		6E557DCF9F42FC12C7BDDF09BB279D0F /* Pods_MentalRouterExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MentalRouterExample.framework; path = "Pods-MentalRouterExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		813A0C0A7741CB32A5BED2C2471D889D /* MSNavigationTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSNavigationTransition.swift; sourceTree = "<group>"; };
-		85DFC15CB7CC15B84E80066CD6648122 /* MSRouter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MSRouter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		85FF7051627A3B69E1B291C51A616744 /* MSPresentingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSPresentingViewController.swift; sourceTree = "<group>"; };
-		8758860D128822A7FA75037C0EB83708 /* MSRouter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MSRouter.modulemap; sourceTree = "<group>"; };
-		8A6E972D5191C3DF391676588AC27431 /* Pods-MSRouterExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MSRouterExample.debug.xcconfig"; sourceTree = "<group>"; };
-		8B9903B1DCAE319C2E78FECE2B155BDD /* MSRouterProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSRouterProtocol.swift; sourceTree = "<group>"; };
+		755A18B82EBD1D9192916DEF41C06E37 /* MentalRouterProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MentalRouterProtocol.swift; sourceTree = "<group>"; };
+		7927CDA34FC72760991F0BE0353C1F06 /* Pods-MentalRouterExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MentalRouterExample-dummy.m"; sourceTree = "<group>"; };
+		94B0B4D46EA840F2EC734C9DEAF7E25C /* MentalTransitionHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MentalTransitionHandler.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A42FB85E55AED756BA2B8988B0460823 /* Pods-MSRouterExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MSRouterExample.modulemap"; sourceTree = "<group>"; };
-		A5CB5DBCFEA1FA0DE66698BB970F9C3C /* MSRouter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MSRouter-umbrella.h"; sourceTree = "<group>"; };
-		A98E04D6750A898C86E6C51E69A32EF4 /* MSRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSRouter.swift; sourceTree = "<group>"; };
-		B247277D38D4134F1362429F7DACD64E /* MSPresentationStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSPresentationStyle.swift; sourceTree = "<group>"; };
-		C3863A05081C3E33D2311EBA2624390F /* UIViewController+Presented.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+Presented.swift"; sourceTree = "<group>"; };
-		D2655755EBF57B1780370A986CFF2046 /* MSRoutingControllerProviderProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSRoutingControllerProviderProtocol.swift; sourceTree = "<group>"; };
-		D35C9205B68338FD53CD6977511F1AA3 /* MSRoutingViewProviderProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSRoutingViewProviderProtocol.swift; sourceTree = "<group>"; };
-		D6D2E1F32794CA577C1EBC9F372D7F13 /* MSPresentingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MSPresentingView.swift; sourceTree = "<group>"; };
-		ED44AEB0BB935BA85AD11F6E4FCF7039 /* Pods-MSRouterExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MSRouterExample-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EDFE92B12F68D27F541E9896AAA3716D /* MSRouter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MSRouter.debug.xcconfig; sourceTree = "<group>"; };
-		FC187B4F8D36AFCADE8B9BE3CE2BCA6C /* Pods-MSRouterExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MSRouterExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		A1ECFF4D81556E36F1AF6A7073EA5392 /* MentalRouter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MentalRouter.debug.xcconfig; sourceTree = "<group>"; };
+		A55B9C20570391FA0DC1660F95FA38FC /* Pods-MentalRouterExample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MentalRouterExample-Info.plist"; sourceTree = "<group>"; };
+		ADAA8E5ED77CC85C10383B20A3E87A94 /* MentalPresentingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MentalPresentingViewController.swift; sourceTree = "<group>"; };
+		AED9581F596ED0740675FD58A8AD67B4 /* MentalPresentationStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MentalPresentationStyle.swift; sourceTree = "<group>"; };
+		AF7602F4B05F1A11E3443C5CBB74273C /* Pods-MentalRouterExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MentalRouterExample-frameworks.sh"; sourceTree = "<group>"; };
+		B44057079C47DA059CA1A568824DBD11 /* MentalRoutingDestinationProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MentalRoutingDestinationProtocol.swift; sourceTree = "<group>"; };
+		B52B6D1A4F659E477B34B45B15862BB5 /* MentalPresentingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MentalPresentingView.swift; sourceTree = "<group>"; };
+		B596358F2A9A54955678D9ED3A3904AB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		BDF69BA1BEA6AF8B9143CDE719EEEC80 /* MentalRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MentalRouter.framework; path = MentalRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D314D0C71101AB48CBA436951EF652D1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		E4D6C2FF80D43835C70DFDFA396AB06B /* MentalRouter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MentalRouter.release.xcconfig; sourceTree = "<group>"; };
+		E7E2A8420FE0DDEC95537C13A4A93B97 /* Pods-MentalRouterExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MentalRouterExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E99CF843D1E69E48DBB7FD68CB31C0C7 /* MentalRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MentalRouter.swift; sourceTree = "<group>"; };
+		E9B12C079C3B87CF28CFD81856F67667 /* Pods-MentalRouterExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MentalRouterExample.modulemap"; sourceTree = "<group>"; };
+		F0CB952DB7E113DDED8F005D7B78F3FB /* Pods-MentalRouterExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MentalRouterExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		F7CF38B2D5DCF0A00B07280BFEC56CE6 /* MentalRouter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MentalRouter-umbrella.h"; sourceTree = "<group>"; };
+		FF333276258E10E3C09A93BA9CA3A847 /* UIViewController+Presented.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+Presented.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0A9FDBE4C983A332D186DC9951DF9469 /* Frameworks */ = {
+		26636F8A91DBF12C7DF14B77D0FF6734 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24A6B31ABE255B09FF93BE6B6B867152 /* Foundation.framework in Frameworks */,
+				8D3608071CAF87498582B53DED1B489E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		82E41A809A01A909F67AED89954C8596 /* Frameworks */ = {
+		FE9087A7A6060F7E2F10F439D5BE099A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FBD390C9B79C0FB661D2386AA6738F5 /* Foundation.framework in Frameworks */,
+				87BBE8516A69BFADAF186A1E3C370887 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0096B8158BEAA0F09CB415AF18C76F7D /* MSRouter */ = {
+		0E0F7BD5D7D65BD28FFE124484E224B5 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				B2EA09AFC0C476F6FCDCF4B317AC417C /* Classes */,
-				1E04398247DF93B469E2F0BC6FA18258 /* Extensions */,
-				08312A1EA3D5C332A2616382E3BFC999 /* Pod */,
-				2151910147D6DCA466260D60E9D6BD57 /* Support Files */,
+				0A06968871629A83884365BFED808813 /* MentalNavigationTransition.swift */,
+				AED9581F596ED0740675FD58A8AD67B4 /* MentalPresentationStyle.swift */,
+				B52B6D1A4F659E477B34B45B15862BB5 /* MentalPresentingView.swift */,
+				ADAA8E5ED77CC85C10383B20A3E87A94 /* MentalPresentingViewController.swift */,
+				E99CF843D1E69E48DBB7FD68CB31C0C7 /* MentalRouter.swift */,
+				755A18B82EBD1D9192916DEF41C06E37 /* MentalRouterProtocol.swift */,
+				631F2C81053BB6E696B789C14A0258E5 /* MentalRoutingControllerProviderProtocol.swift */,
+				B44057079C47DA059CA1A568824DBD11 /* MentalRoutingDestinationProtocol.swift */,
+				25437B4E7B0EDBF4F9104F15B0D48146 /* MentalRoutingViewProviderProtocol.swift */,
+				94B0B4D46EA840F2EC734C9DEAF7E25C /* MentalTransitionHandler.swift */,
 			);
-			name = MSRouter;
+			name = Classes;
+			path = MentalRouter/MentalRouter/Classes;
+			sourceTree = "<group>";
+		};
+		34126F6CF179F35E2D12C129120A67A2 /* Pods-MentalRouterExample */ = {
+			isa = PBXGroup;
+			children = (
+				E9B12C079C3B87CF28CFD81856F67667 /* Pods-MentalRouterExample.modulemap */,
+				E7E2A8420FE0DDEC95537C13A4A93B97 /* Pods-MentalRouterExample-acknowledgements.markdown */,
+				F0CB952DB7E113DDED8F005D7B78F3FB /* Pods-MentalRouterExample-acknowledgements.plist */,
+				7927CDA34FC72760991F0BE0353C1F06 /* Pods-MentalRouterExample-dummy.m */,
+				AF7602F4B05F1A11E3443C5CBB74273C /* Pods-MentalRouterExample-frameworks.sh */,
+				A55B9C20570391FA0DC1660F95FA38FC /* Pods-MentalRouterExample-Info.plist */,
+				2FC64A9DC04EB34CA4B47D96DD2F8BF9 /* Pods-MentalRouterExample-umbrella.h */,
+				08135DA433FB58D27C266D4BB9CD38BE /* Pods-MentalRouterExample.debug.xcconfig */,
+				407ACB479BA32789EA88F2F773A8D302 /* Pods-MentalRouterExample.release.xcconfig */,
+			);
+			name = "Pods-MentalRouterExample";
+			path = "Target Support Files/Pods-MentalRouterExample";
+			sourceTree = "<group>";
+		};
+		3BF7F63837052AAD84BE596AA812BE57 /* MentalRouter */ = {
+			isa = PBXGroup;
+			children = (
+				0E0F7BD5D7D65BD28FFE124484E224B5 /* Classes */,
+				ADD196117A22A471BE6C14145711A13A /* Extensions */,
+				717AEC5F14284FBDF98894EE13DB3890 /* Pod */,
+				59B202236E7CE9418F7D27F72D911458 /* Support Files */,
+			);
+			name = MentalRouter;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		08312A1EA3D5C332A2616382E3BFC999 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				44B3D19C6E60F9F1CF353E9A4B659DDD /* LICENSE */,
-				85DFC15CB7CC15B84E80066CD6648122 /* MSRouter.podspec */,
-				0BB852846325E23A76200E67C68E51D0 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		1E04398247DF93B469E2F0BC6FA18258 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				C3863A05081C3E33D2311EBA2624390F /* UIViewController+Presented.swift */,
-			);
-			name = Extensions;
-			path = MSRouter/MSRouter/Extensions;
-			sourceTree = "<group>";
-		};
-		2151910147D6DCA466260D60E9D6BD57 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8758860D128822A7FA75037C0EB83708 /* MSRouter.modulemap */,
-				5CEDFC0854BBA8CED572E624EDABB734 /* MSRouter-dummy.m */,
-				3ED7BE62F52385103DE9F220D654CF15 /* MSRouter-Info.plist */,
-				3F87B0FB9BF0BB4E4A4550929B413CB4 /* MSRouter-prefix.pch */,
-				A5CB5DBCFEA1FA0DE66698BB970F9C3C /* MSRouter-umbrella.h */,
-				EDFE92B12F68D27F541E9896AAA3716D /* MSRouter.debug.xcconfig */,
-				41BAB492ECF94CF521EC28A66395EB43 /* MSRouter.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/MSRouter";
-			sourceTree = "<group>";
-		};
-		4C967D3B31A8A58CB9EE372D3038AE01 /* Pods-MSRouterExample */ = {
-			isa = PBXGroup;
-			children = (
-				A42FB85E55AED756BA2B8988B0460823 /* Pods-MSRouterExample.modulemap */,
-				ED44AEB0BB935BA85AD11F6E4FCF7039 /* Pods-MSRouterExample-acknowledgements.markdown */,
-				FC187B4F8D36AFCADE8B9BE3CE2BCA6C /* Pods-MSRouterExample-acknowledgements.plist */,
-				03435A55DBAE79A45F760223D22452FC /* Pods-MSRouterExample-dummy.m */,
-				703CCA6C1660C7B0F45F1924293565C1 /* Pods-MSRouterExample-frameworks.sh */,
-				29C0D942A993F7415B3257633D476AD3 /* Pods-MSRouterExample-Info.plist */,
-				478C863BFC45CB9EF13A4DE0D1243EE2 /* Pods-MSRouterExample-umbrella.h */,
-				8A6E972D5191C3DF391676588AC27431 /* Pods-MSRouterExample.debug.xcconfig */,
-				66DC68C55815BFBDEE247F41F7AA5AA2 /* Pods-MSRouterExample.release.xcconfig */,
-			);
-			name = "Pods-MSRouterExample";
-			path = "Target Support Files/Pods-MSRouterExample";
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -164,58 +148,66 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7767E4A2788329FBD33FE2CAD3A02144 /* Products */ = {
+		59B202236E7CE9418F7D27F72D911458 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				44CFDE51B508A4512A39B8C4A0122B8F /* MSRouter.framework */,
-				4791FA08E3D64E36459D7E96524A1C14 /* Pods_MSRouterExample.framework */,
+				45C8BDDFE3965970E971C9BA2FDE4DCD /* MentalRouter.modulemap */,
+				4C89C9A7A7167B9BE29E4A37FB9E008B /* MentalRouter-dummy.m */,
+				3BFAC19ABF53E3ECC1F9B9188A9C8B2B /* MentalRouter-Info.plist */,
+				587A7A22B2AD96EC97BBF914CFB020D5 /* MentalRouter-prefix.pch */,
+				F7CF38B2D5DCF0A00B07280BFEC56CE6 /* MentalRouter-umbrella.h */,
+				A1ECFF4D81556E36F1AF6A7073EA5392 /* MentalRouter.debug.xcconfig */,
+				E4D6C2FF80D43835C70DFDFA396AB06B /* MentalRouter.release.xcconfig */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MentalRouter";
 			sourceTree = "<group>";
 		};
-		8094C6BB2572101219203A7F9C39F300 /* Development Pods */ = {
+		717AEC5F14284FBDF98894EE13DB3890 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				0096B8158BEAA0F09CB415AF18C76F7D /* MSRouter */,
+				D314D0C71101AB48CBA436951EF652D1 /* LICENSE */,
+				18E3035A401EC86AB3E2F884FEF024FE /* MentalRouter.podspec */,
+				B596358F2A9A54955678D9ED3A3904AB /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		999B166F41F534C8C25F96DBF89DB81C /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BF7F63837052AAD84BE596AA812BE57 /* MentalRouter */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		B2EA09AFC0C476F6FCDCF4B317AC417C /* Classes */ = {
+		ADD196117A22A471BE6C14145711A13A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				813A0C0A7741CB32A5BED2C2471D889D /* MSNavigationTransition.swift */,
-				B247277D38D4134F1362429F7DACD64E /* MSPresentationStyle.swift */,
-				D6D2E1F32794CA577C1EBC9F372D7F13 /* MSPresentingView.swift */,
-				85FF7051627A3B69E1B291C51A616744 /* MSPresentingViewController.swift */,
-				A98E04D6750A898C86E6C51E69A32EF4 /* MSRouter.swift */,
-				8B9903B1DCAE319C2E78FECE2B155BDD /* MSRouterProtocol.swift */,
-				D2655755EBF57B1780370A986CFF2046 /* MSRoutingControllerProviderProtocol.swift */,
-				3F95C48A093EE8B70717AD7A593AD3A3 /* MSRoutingDestinationProtocol.swift */,
-				D35C9205B68338FD53CD6977511F1AA3 /* MSRoutingViewProviderProtocol.swift */,
-				014406CBE4AD66C596D6049454840F2C /* MSTransitionHandler.swift */,
+				FF333276258E10E3C09A93BA9CA3A847 /* UIViewController+Presented.swift */,
 			);
-			name = Classes;
-			path = MSRouter/MSRouter/Classes;
+			name = Extensions;
+			path = MentalRouter/MentalRouter/Extensions;
+			sourceTree = "<group>";
+		};
+		BED169D2B06F1545C1C8EC86454C196F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDF69BA1BEA6AF8B9143CDE719EEEC80 /* MentalRouter.framework */,
+				6E557DCF9F42FC12C7BDDF09BB279D0F /* Pods_MentalRouterExample.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				8094C6BB2572101219203A7F9C39F300 /* Development Pods */,
+				999B166F41F534C8C25F96DBF89DB81C /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				7767E4A2788329FBD33FE2CAD3A02144 /* Products */,
-				D1D589680B034A20BEC24E8B8A9EDEF3 /* Targets Support Files */,
+				BED169D2B06F1545C1C8EC86454C196F /* Products */,
+				F7178A497DEC5E4B242062FB34EE0514 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D1D589680B034A20BEC24E8B8A9EDEF3 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4C967D3B31A8A58CB9EE372D3038AE01 /* Pods-MSRouterExample */,
-			);
-			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -226,63 +218,71 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F7178A497DEC5E4B242062FB34EE0514 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				34126F6CF179F35E2D12C129120A67A2 /* Pods-MentalRouterExample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		47349AD7E92C965864C23DE8B0B00C05 /* Headers */ = {
+		492A507346270ABDC6A51FBBE447B70C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE52FD0FA274A1E7DB82532201B27B1B /* MSRouter-umbrella.h in Headers */,
+				5E344A43FD224569154DB8A128C535AA /* MentalRouter-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B8E199561D73226E2610B46DB98F4A4 /* Headers */ = {
+		C0FC473FADB0E29734713DFE00A84024 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6E24749D0D1996644A8A1FE1E706032 /* Pods-MSRouterExample-umbrella.h in Headers */,
+				C4AFD8D0A20FB97BCB2A78D371FD15A0 /* Pods-MentalRouterExample-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B27A15A78A45659BDBF99D061FD854E8 /* MSRouter */ = {
+		B5BCC0AA7310C8169AB85F2885EC3259 /* MentalRouter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 816D8CE188D3FB982BBE93EAAC9C3E72 /* Build configuration list for PBXNativeTarget "MSRouter" */;
+			buildConfigurationList = B2B577675FA4935D0ECDBB75FAD3195F /* Build configuration list for PBXNativeTarget "MentalRouter" */;
 			buildPhases = (
-				47349AD7E92C965864C23DE8B0B00C05 /* Headers */,
-				A5920E4826A028C5B6BDE966DBD911A5 /* Sources */,
-				0A9FDBE4C983A332D186DC9951DF9469 /* Frameworks */,
-				612FABB36A6F534A59833C6C32114155 /* Resources */,
+				492A507346270ABDC6A51FBBE447B70C /* Headers */,
+				1FA019A343D6B9CB422B74436165D0E5 /* Sources */,
+				FE9087A7A6060F7E2F10F439D5BE099A /* Frameworks */,
+				649076DDE2E25AAD5CB048D132CF51CF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = MSRouter;
-			productName = MSRouter;
-			productReference = 44CFDE51B508A4512A39B8C4A0122B8F /* MSRouter.framework */;
+			name = MentalRouter;
+			productName = MentalRouter;
+			productReference = BDF69BA1BEA6AF8B9143CDE719EEEC80 /* MentalRouter.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		DFCD51A2C292DC91454282AC3572D902 /* Pods-MSRouterExample */ = {
+		D1858EE575E48C34F6D5485CF68E64B1 /* Pods-MentalRouterExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D73CDB41DEE38C8522C4DE9C5B857804 /* Build configuration list for PBXNativeTarget "Pods-MSRouterExample" */;
+			buildConfigurationList = 03427F1B861BE12C284D99649E1C5C85 /* Build configuration list for PBXNativeTarget "Pods-MentalRouterExample" */;
 			buildPhases = (
-				7B8E199561D73226E2610B46DB98F4A4 /* Headers */,
-				F0AEE96ED455BCD2DB7D22B1FD1C506C /* Sources */,
-				82E41A809A01A909F67AED89954C8596 /* Frameworks */,
-				44345B5349DE0EB409F0EA518736A493 /* Resources */,
+				C0FC473FADB0E29734713DFE00A84024 /* Headers */,
+				E36F7EA7438850099C0BF91930982DBE /* Sources */,
+				26636F8A91DBF12C7DF14B77D0FF6734 /* Frameworks */,
+				E3BD4E87397042187CE0346D7C82600B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				63524F7E1A80977E027B862C3C0DD021 /* PBXTargetDependency */,
+				D711A36E53B86F9F1F116E35013139DA /* PBXTargetDependency */,
 			);
-			name = "Pods-MSRouterExample";
-			productName = "Pods-MSRouterExample";
-			productReference = 4791FA08E3D64E36459D7E96524A1C14 /* Pods_MSRouterExample.framework */;
+			name = "Pods-MentalRouterExample";
+			productName = "Pods-MentalRouterExample";
+			productReference = 6E557DCF9F42FC12C7BDDF09BB279D0F /* Pods_MentalRouterExample.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -303,25 +303,25 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 7767E4A2788329FBD33FE2CAD3A02144 /* Products */;
+			productRefGroup = BED169D2B06F1545C1C8EC86454C196F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B27A15A78A45659BDBF99D061FD854E8 /* MSRouter */,
-				DFCD51A2C292DC91454282AC3572D902 /* Pods-MSRouterExample */,
+				B5BCC0AA7310C8169AB85F2885EC3259 /* MentalRouter */,
+				D1858EE575E48C34F6D5485CF68E64B1 /* Pods-MentalRouterExample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		44345B5349DE0EB409F0EA518736A493 /* Resources */ = {
+		649076DDE2E25AAD5CB048D132CF51CF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		612FABB36A6F534A59833C6C32114155 /* Resources */ = {
+		E3BD4E87397042187CE0346D7C82600B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -331,48 +331,84 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A5920E4826A028C5B6BDE966DBD911A5 /* Sources */ = {
+		1FA019A343D6B9CB422B74436165D0E5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				94D5316D2E9FF98B5D63E4E171EBC64E /* MSNavigationTransition.swift in Sources */,
-				D720649170D7388FC575971B2E5337BB /* MSPresentationStyle.swift in Sources */,
-				29B3E9BBBA5A5C7734091EFA3EE24E36 /* MSPresentingView.swift in Sources */,
-				F2F208C71F795821C8240E8A01F49923 /* MSPresentingViewController.swift in Sources */,
-				1B3F75F725B900D19F0D8AE1BE592B3F /* MSRouter-dummy.m in Sources */,
-				4EAFBDDA9E06B7A5D3ED52E3E83DC7E1 /* MSRouter.swift in Sources */,
-				8AF987A2EEC3D18391904F0951B61257 /* MSRouterProtocol.swift in Sources */,
-				4D417A36B95B0DC1C5AF3E9389D94D24 /* MSRoutingControllerProviderProtocol.swift in Sources */,
-				D50BEA44BB406B8F1F1A9E9D42E6AC47 /* MSRoutingDestinationProtocol.swift in Sources */,
-				524105B88603C0D4C52A1CE6FC8CEF68 /* MSRoutingViewProviderProtocol.swift in Sources */,
-				7BC83BC81F5A205FF156F4D2AC86DE5C /* MSTransitionHandler.swift in Sources */,
-				5BAC67AB25FC5479CF88551029AF342D /* UIViewController+Presented.swift in Sources */,
+				4C5974BAD0A7C3C4AEBDD27D08EE3C91 /* MentalNavigationTransition.swift in Sources */,
+				1D2C9FE142ADB58B17FDB67A391E2C37 /* MentalPresentationStyle.swift in Sources */,
+				3063054BE35E41C4BA21B4A38F6257F6 /* MentalPresentingView.swift in Sources */,
+				91C9C1837A26AD67DC18A0BE6A1E5F45 /* MentalPresentingViewController.swift in Sources */,
+				FA6C27949F797F1382B3150CE25D965C /* MentalRouter-dummy.m in Sources */,
+				8D139D25AF9C3C33A3B4BDFB43B98943 /* MentalRouter.swift in Sources */,
+				3C6EE84CDADB7716D2EB719D345BAF7F /* MentalRouterProtocol.swift in Sources */,
+				58655A6A975D864066B2D51D4F49BB77 /* MentalRoutingControllerProviderProtocol.swift in Sources */,
+				549B13A47613486BC290BDF97C66681E /* MentalRoutingDestinationProtocol.swift in Sources */,
+				A91348BCBA93A0B417928A1B9EDEDED4 /* MentalRoutingViewProviderProtocol.swift in Sources */,
+				6FF0F31D29E8CDE7BA1490B33B0358F8 /* MentalTransitionHandler.swift in Sources */,
+				8ACCAD7C9A221590FDB977CFEF5BAA6A /* UIViewController+Presented.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F0AEE96ED455BCD2DB7D22B1FD1C506C /* Sources */ = {
+		E36F7EA7438850099C0BF91930982DBE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C040B9D9A2BDA0129350C1440DBC5DEF /* Pods-MSRouterExample-dummy.m in Sources */,
+				48119EE59F87262768260432E44C6757 /* Pods-MentalRouterExample-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		63524F7E1A80977E027B862C3C0DD021 /* PBXTargetDependency */ = {
+		D711A36E53B86F9F1F116E35013139DA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = MSRouter;
-			target = B27A15A78A45659BDBF99D061FD854E8 /* MSRouter */;
-			targetProxy = 2F7A825FB483A4F1715C94D79303783C /* PBXContainerItemProxy */;
+			name = MentalRouter;
+			target = B5BCC0AA7310C8169AB85F2885EC3259 /* MentalRouter */;
+			targetProxy = 828D4833317B1BF4E22950C3E8E08F99 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0D82A4EFBB078D80A8ADB55A1030182D /* Debug */ = {
+		1C074EBF685CA2651FB2B6A6B9F5E4F3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A6E972D5191C3DF391676588AC27431 /* Pods-MSRouterExample.debug.xcconfig */;
+			baseConfigurationReference = E4D6C2FF80D43835C70DFDFA396AB06B /* MentalRouter.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MentalRouter/MentalRouter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MentalRouter/MentalRouter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MentalRouter/MentalRouter.modulemap";
+				PRODUCT_MODULE_NAME = MentalRouter;
+				PRODUCT_NAME = MentalRouter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1F7E142F485CCEF4125D8A599D4D866B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 407ACB479BA32789EA88F2F773A8D302 /* Pods-MentalRouterExample.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -384,7 +420,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MSRouterExample/Pods-MSRouterExample-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-MentalRouterExample/Pods-MentalRouterExample-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -393,7 +429,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MSRouterExample/Pods-MSRouterExample.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-MentalRouterExample/Pods-MentalRouterExample.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -401,41 +437,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		22ADDDCE3375EF8331249A801EB93B60 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 41BAB492ECF94CF521EC28A66395EB43 /* MSRouter.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MSRouter/MSRouter-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MSRouter/MSRouter-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/MSRouter/MSRouter.modulemap";
-				PRODUCT_MODULE_NAME = MSRouter;
-				PRODUCT_NAME = MSRouter;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -571,44 +572,9 @@
 			};
 			name = Release;
 		};
-		C27756BAB984F338776E3415EFA1790A /* Debug */ = {
+		9FDE4615210A876F9887AC586C81F363 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDFE92B12F68D27F541E9896AAA3716D /* MSRouter.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/MSRouter/MSRouter-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MSRouter/MSRouter-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/MSRouter/MSRouter.modulemap";
-				PRODUCT_MODULE_NAME = MSRouter;
-				PRODUCT_NAME = MSRouter;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		DB28679C5D59C41FC0D6E70208B0F25D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 66DC68C55815BFBDEE247F41F7AA5AA2 /* Pods-MSRouterExample.release.xcconfig */;
+			baseConfigurationReference = 08135DA433FB58D27C266D4BB9CD38BE /* Pods-MentalRouterExample.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -620,7 +586,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MSRouterExample/Pods-MSRouterExample-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-MentalRouterExample/Pods-MentalRouterExample-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -629,7 +595,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MSRouterExample/Pods-MSRouterExample.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-MentalRouterExample/Pods-MentalRouterExample.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -638,15 +604,58 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
+		};
+		AB26D3966A38A89D6EAA04321AFE7F86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1ECFF4D81556E36F1AF6A7073EA5392 /* MentalRouter.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MentalRouter/MentalRouter-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MentalRouter/MentalRouter-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/MentalRouter/MentalRouter.modulemap";
+				PRODUCT_MODULE_NAME = MentalRouter;
+				PRODUCT_NAME = MentalRouter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		03427F1B861BE12C284D99649E1C5C85 /* Build configuration list for PBXNativeTarget "Pods-MentalRouterExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9FDE4615210A876F9887AC586C81F363 /* Debug */,
+				1F7E142F485CCEF4125D8A599D4D866B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -656,20 +665,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		816D8CE188D3FB982BBE93EAAC9C3E72 /* Build configuration list for PBXNativeTarget "MSRouter" */ = {
+		B2B577675FA4935D0ECDBB75FAD3195F /* Build configuration list for PBXNativeTarget "MentalRouter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C27756BAB984F338776E3415EFA1790A /* Debug */,
-				22ADDDCE3375EF8331249A801EB93B60 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D73CDB41DEE38C8522C4DE9C5B857804 /* Build configuration list for PBXNativeTarget "Pods-MSRouterExample" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0D82A4EFBB078D80A8ADB55A1030182D /* Debug */,
-				DB28679C5D59C41FC0D6E70208B0F25D /* Release */,
+				AB26D3966A38A89D6EAA04321AFE7F86 /* Debug */,
+				1C074EBF685CA2651FB2B6A6B9F5E4F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,0 +1,6 @@
+framework module MentalRouter {
+  umbrella header "MentalRouter-umbrella.h"
+
+  export *
+  module * { export * }
+}

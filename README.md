@@ -1,4 +1,4 @@
-# MSRouter
+# MentalRouter
 Simple router for UIKit and SwiftUI iOS applications.
 
 This framework provides router for UIKit, SwiftUI and UIKit+SwiftUI iOS applications.
@@ -15,63 +15,63 @@ All transitions in application are implemented via standard UIKit navigation sta
 
 ## Installation
 
-[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate MSRouter into your Xcode project using CocoaPods, specify it in your `Podfile`:
+[CocoaPods](https://cocoapods.org) is a dependency manager for Cocoa projects. For usage and installation instructions, visit their website. To integrate MentalRouter into your Xcode project using CocoaPods, specify it in your `Podfile`:
 ```ruby
-pod 'MSRouter'
+pod 'MentalRouter'
 ```
 
 Import framework to the file to start using it
 ``` swift
-import MSRouter
+import MentalRouter
 ```
 
 ## Usage
 
 ### Navigation concept
 
-MSRouter provides router builded on UIKit navigation stack. It means that using MSRouter you can use SwiftUI views and all well-known features of UINavigationController together. For successful navigation in project with MSRouter you should:
+MentalRouter provides router builded on UIKit navigation stack. It means that using MentalRouter you can use SwiftUI views and all well-known features of UINavigationController together. For successful navigation in project with MentalRouter you should:
 * Initialise global application router -> :link:[Initial setup](#initial-setup)
 * Create a routing destination for screen -> :link:[Routing destination](#routing-destination)
 * Create a local router for screen -> :link:[Local router](#local-router)
 * Call local router's method from UI with routing destination as a parameters -> :link:[Call from UI](#call-from-ui)
-* [optional] :ghost: Celebrate your first transition with MSRouter
+* [optional] :ghost: Celebrate your first transition with MentalRouter
 
 
 ### Initial setup
 
-Instantiate MSRouter before setting `keyWindow` of application and pass window to it.
+Instantiate MentalRouter before setting `keyWindow` of application and pass window to it.
 ```Swift
 if let windowScene = scene as? UIWindowScene {
     let window = UIWindow(windowScene: windowScene)
-    MSRouter.default.initialSetup(window: window)
+    MentalRouter.default.initialSetup(window: window)
     self.window = window
 }
 ```
 
-Set `rootViewController` before making window key and visible with MSRouter's public methods.
+Set `rootViewController` before making window key and visible with MentalRouter's public methods.
 ```Swift
 let contentView = ContentView(viewModel: ContentViewModel()).castToAnyView()
-let presentingView: MSPresentingView = .navigationController(.viewController(contentView))
-let viewController = MSRouter.default.buildViewController(presentingView: presentingView)
+let presentingView: MentalPresentingView = .navigationController(.viewController(contentView))
+let viewController = MentalRouter.default.buildViewController(presentingView: presentingView)
 
-MSRouter.default.navigate(viewController: viewController, presentationStyle: .replaceRoot)
+MentalRouter.default.navigate(viewController: viewController, presentationStyle: .replaceRoot)
 
 window.makeKeyAndVisible()
 ```
 
 ### Routing destination
 
-Create a routing destination for each screen and subscribe on `MSRoutingDestinationProtocol` protocol to pass it in `MSRouter` later. Create enum for each screen where each case will be a route to next screen. To pass the data use parameters of enum's case. For example, routing to `DetailView` in [Example project](https://github.com/MsMobileDev/MSRouter/tree/master/Example) and passing UIColor will look like this:
+Create a routing destination for each screen and subscribe on `MentalRoutingDestinationProtocol` protocol to pass it in `MentalRouter` later. Create enum for each screen where each case will be a route to next screen. To pass the data use parameters of enum's case. For example, routing to `DetailView` in [Example project](https://github.com/MsMobileDev/MentalRouter/tree/master/Example) and passing UIColor will look like this:
 ```Swift
-enum DetailDestination: MSRoutingDestinationProtocol {
+enum DetailDestination: MentalRoutingDestinationProtocol {
     case detailView(color: UIColor)
 }
 ```
 
-With MSRouter is very easy to navigate to SwiftUI view and UIKit controller.
-- To show SwiftUI view as a next screen for route implement `MSRoutingViewProviderProtocol` protocol:
+With MentalRouter is very easy to navigate to SwiftUI view and UIKit controller.
+- To show SwiftUI view as a next screen for route implement `MentalRoutingViewProviderProtocol` protocol:
     ```Swift
-    extension DetailDestination: MSRoutingViewProviderProtocol {
+    extension DetailDestination: MentalRoutingViewProviderProtocol {
         var destinationView: AnyView {
             switch self {
             case let .detailView(color):
@@ -82,9 +82,9 @@ With MSRouter is very easy to navigate to SwiftUI view and UIKit controller.
     }
     ```
 
-- To show UIViewController as a next screen for route implement `MSRoutingControllerProviderProtocol` protocol:
+- To show UIViewController as a next screen for route implement `MentalRoutingControllerProviderProtocol` protocol:
     ```Swift
-    extension ControllerDestination: MSRoutingControllerProviderProtocol {
+    extension ControllerDestination: MentalRoutingControllerProviderProtocol {
         var viewController: UIViewController {
             let storyboard = UIStoryboard(name: "Storyboard", bundle: Bundle.main)
             let viewController: SimpleViewController
@@ -100,21 +100,21 @@ With MSRouter is very easy to navigate to SwiftUI view and UIKit controller.
 Create a local router for a screen.
 ```Swift
 final class DetailRouter {
-    private let router: MSRouter
+    private let router: MentalRouter
 
-    init(router: MSRouter) {
+    init(router: MentalRouter) {
         self.router = router
     }
 }
 ```
 
-Implement `MSRouterProtocol` protocol in local router to be ready for any transition. Pass  ***.push***, ***.present***, ***.replaceRoot*** or ***.custom*** presentation style to parameter `MSPresentationStyle` to modify appearence of transaction.
+Implement `MentalRouterProtocol` protocol in local router to be ready for any transition. Pass  ***.push***, ***.present***, ***.replaceRoot*** or ***.custom*** presentation style to parameter `MentalPresentationStyle` to modify appearence of transaction.
 ```Swift
 // MARK: RouterProtocol
-extension DetailRouter: MSRouterProtocol {
-    typealias MSRoutingDestination = MSRoutingDestinationProtocol & MSRoutingViewProviderProtocol
+extension DetailRouter: MentalRouterProtocol {
+    typealias MentalRoutingDestination = MentalRoutingDestinationProtocol & MentalRoutingViewProviderProtocol
 
-    func route(destination: MSRoutingDestination, presentationStyle: MSPresentationStyle) {
+    func route(destination: MentalRoutingDestination, presentationStyle: MentalPresentationStyle) {
         let view = destination.destinationView
         let viewController = router.buildViewController(presentingView: .viewController(view))
 
@@ -135,7 +135,7 @@ Button(action: {
     Text("Show detail view")
 })
 ```
-Or incapsulate this logic in view's view model to follow MVVM paradigm. The example of such implementation you can find in [Example project](https://github.com/MsMobileDev/MSRouter/tree/master/Example).
+Or incapsulate this logic in view's view model to follow MVVM paradigm. The example of such implementation you can find in [Example project](https://github.com/MsMobileDev/MentalRouter/tree/master/Example).
 
 ### Custom transition
 Create class for animated transaction.
@@ -181,12 +181,12 @@ extension ScaleTransition: UIViewControllerAnimatedTransitioning {
     }
 }
 ```
-In [Example project](https://github.com/MsMobileDev/MSRouter/tree/master/Example) there is an example of scale transition from current point. It is implemented in [ScaleTransition file](https://github.com/MsMobileDev/MSRouter/blob/master/Example/MSRouterExample/Sources/Helpers/ScaleTrasition.swift).
+In [Example project](https://github.com/MsMobileDev/MentalRouter/tree/master/Example) there is an example of scale transition from current point. It is implemented in [ScaleTransition file](https://github.com/MsMobileDev/MentalRouter/blob/master/Example/MentalRouterExample/Sources/Helpers/ScaleTrasition.swift).
 
-Pass instance of `ScaleTrasition` to ***.custom*** MSPresentationStyle as a parameter of local router method.
+Pass instance of `ScaleTrasition` to ***.custom*** MentalPresentationStyle as a parameter of local router method.
 ```Swift
 let destination = DetailDestination.detailView(color: .red)
-let transition = MSNavigationTransition(
+let transition = MentalNavigationTransition(
         presented: ScaleTransition(duration: 0.6, scale: 1.0, center: viewCenter),
         dismissed: ScaleTransition(duration: 0.6, scale: 0.0, center: viewCenter)
     )
@@ -198,4 +198,4 @@ DetailRouter(router: .default)
 `ScaleTrasition` get parameter 'center' which is a center of a tapped view. To get layout information of current view in SwiftUI Apple provides us: `GeometryReader` or `PreferenceKey`. The example of using the last one is shown in [RectModifier file](). Search for explanation of both approaches in articles in IT community, now there are a lot of them.
 
 ### License
-MSRouter is released under the MIT license. See [LICENSE](https://github.com/MsMobileDev/MSRouter/blob/master/LICENSE) for details.
+MentalRouter is released under the MIT license. See [LICENSE](https://github.com/MsMobileDev/MentalRouter/blob/master/LICENSE) for details.

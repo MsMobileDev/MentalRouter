@@ -1,16 +1,16 @@
 PODS:
-  - MSRouter (0.1.1)
+  - MentalRouter (0.1.1)
 
 DEPENDENCIES:
-  - MSRouter (from `../`)
+  - MentalRouter (from `../`)
 
 EXTERNAL SOURCES:
-  MSRouter:
+  MentalRouter:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MSRouter: 82af28c2e4125b059b52c53be3017bc45485a991
+  MentalRouter: 19eabbe72b387122194c314158256b9167a2d6f2
 
-PODFILE CHECKSUM: 511b2acf4f5e006f652fbfb0edf10f9ca02a7fdb
+PODFILE CHECKSUM: 8d06eb2ee3e0e81105c2081e96669e3f8bff8064
 
 COCOAPODS: 1.10.1
