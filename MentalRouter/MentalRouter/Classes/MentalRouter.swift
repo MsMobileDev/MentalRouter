@@ -118,8 +118,7 @@ public extension MentalRouter {
     ///
     func rollBack() {
         DispatchQueue.main.async {
-            guard let visibleController = self.navigationController?.visibleViewController,
-                  visibleController.canPerformRollBackAction() else {
+            guard let visibleController = self.navigationController?.visibleViewController else {
                 fatalError("MentalRouter can't roll back the first item in navigation stack.")
             }
             
