@@ -9,7 +9,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "MentalRouter"
-  spec.version      = "0.1.1"
+  spec.version      = "0.1.2"
   spec.summary      = "Simple router for UIKit and SwiftUI iOS applications."
   
 
