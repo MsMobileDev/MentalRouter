@@ -88,6 +88,14 @@ public extension MentalRouter {
                 viewController.modalPresentationStyle = modalPresentationStyle
                 viewController.modalTransitionStyle = modalTransitionStyle
                 
+                switch modalPresentationStyle {
+                case .overCurrentContext, .overFullScreen:
+                    viewController.view.backgroundColor = .clear
+                    
+                default:
+                    break
+                }
+                
                 self.navigationController?.present(viewController, animated: true, completion: nil)
             }
             
